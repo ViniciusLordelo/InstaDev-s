@@ -1,8 +1,45 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Login";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<body>
+    <div class="corpo">
+
+        <div class="retangulo1">
+            <div class="content">
+
+                <img src="~/img/Instadev.svg" alt="Logo Instadev">
+                
+                <form action="" class="form_login">
+                    <input type="email" class="input1" placeholder="Email" required />
+                    <input type="password" class="input2" placeholder="Senha" required />
+                    <button type="submit">Entrar</button>
+                </form>
+
+                <div class="ou">
+                    <hr>
+                    <h2>OU</h2>
+                    <hr>
+                </div>
+
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+        </div>
+
+        <div class="retangulo2">
+            <div class="content2">
+
+                <h2>Não tem uma conta? <a href="#">Cadastre-se</a></h2>
+            </div>
+        </div>
+        
+        <div class="retangulo3">
+            <h2>Obtenha o aplicativo</h2>
+            
+            <a href="https://apps.apple.com/br/app/instagram/id389801252"><img src="img/app_store 1.svg"
+                    alt="Link para baixar o Aplicativo na App Store"></a>
+            <a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=pt_BR"><img
+                    src="img/google_play 1.svg" alt="Link para baixar o Aplicativo na Play Store"></a>
+        </div>
+    </div>
+</body>
