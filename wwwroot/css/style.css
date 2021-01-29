@@ -23,12 +23,14 @@ body
 .content h2
 {
    
- font-family: Segoe UI;
+ font-family: "Segoe UI";
  font-style: normal;
  font-weight: 600;
  font-size: 14px;
  line-height: 19px; 
  color: #909090;
+ padding: 10px;
+
     
 }
 .content
@@ -80,12 +82,13 @@ body
 .caixadetermos p
 {
 
- font-family: Segoe UI;
+ font-family: "Segoe UI";
  font-style: normal;
  font-weight: normal;
  font-size: 12px;
  line-height: 16px;
  color: #909090;
+ margin-top: 17px;
 
 }
 
@@ -110,13 +113,18 @@ body
  text-align: center;
  display: flex;
  flex-direction: column;
- font-family: Segoe UI;
+ font-family: "Segoe UI";
  font-style: normal;
  font-weight: normal;
  font-size: 12px;
  line-height: 40px;
  color: black;
 
+}
+
+.content2 p
+{
+ margin-top: 15px; 
 }
 
 .retangulo3
@@ -135,7 +143,7 @@ body
 .retangulo3 h2
 {
 
- font-family: Segoe UI;
+ font-family: "Segoe UI";
  font-style: normal;
  font-weight: normal;
  width: 342px;
@@ -148,16 +156,16 @@ body
 
 .form_cadastro button 
 {
-    width: 267px;
-    height: 30px;
-    left: 826px;
-    top: 485px; 
-    background: #2686CC;
-    border-radius: 2px;
-    border: 1px solid #DCDCDC;
-    box-sizing: border-box;
-    color: white;
 
+ width: 267px;
+ height: 30px;
+ left: 826px;
+ top: 485px; 
+ background: #2686CC;
+ border-radius: 2px;
+ border: 1px solid #DCDCDC;
+ box-sizing: border-box;
+ color: white;
  
 }
 
