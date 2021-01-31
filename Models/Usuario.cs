@@ -1,23 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using Microsoft.AspNetCore.Http;
+
 
 namespace InstaDev_s.Models
 {
     public class Usuario : InstadevBase
     {
-        public Usuario(int idUsuario, string nome, string foto, DateTime dataNascimento, string email, string username, string senha) 
-        {
-            this.IdUsuario = idUsuario;
-                this.Nome = nome;
-                this.Foto = foto;
-                this.DataNascimento = dataNascimento;
-                this.Email = email;
-                this.Username = username;
-                this.Senha = senha;
-               
-        }
-                public int IdUsuario { get; set; }
+        public int IdUsuario { get; set; }
         public string Nome { get; set; }
         public string Foto { get; set; }
         public DateTime DataNascimento { get; set; }
@@ -25,6 +16,10 @@ namespace InstaDev_s.Models
         public string Email { get; set; }
         public string Username { get; set; }
         public string Senha { get; set; }
+
+        public string Mensagem { get; set; }
+        
+        
 
         private const string PATH = "Database/Usuarios.csv";
 
@@ -57,21 +52,67 @@ namespace InstaDev_s.Models
             }
             return usuarios;
         }   
-        public void EditarUsuario(){
+
+        public void EditarUsuario(Usuario u){
+            List<string> linhas  = ReadAllLinesCSV(PATH);
+
+            linhas.RemoveAll(x => x.Split(";")[5] == u.Username);
+            linhas.RemoveAll(x => x.Split(";")[4] == u.Email);
+            linhas.RemoveAll(x => x.Split(";")[3] == u.Nome);
+            linhas.RemoveAll(x => x.Split(";")[1] == u.Foto);
+
+            linhas.Add(Prepare(u));
+
+            RewriteCSV(PATH, linhas);
 
         }
-        public void DeletarUsuario(){
+
+        public void DeletarUsuario(string userName){
+
+            List<string> linhas = ReadAllLinesCSV(PATH);
+
+            linhas.RemoveAll(x => x.Split(";")[0] == userName.ToString());
+            
+            RewriteCSV(PATH, linhas);
+
 
         } 
+
         public void ListarUsuario(){
 
         }
-        public void Logar(){
 
-        }
+        // public void Logar(IFormCollection form){
+        //     List<string> csv = ReadAllLinesCSV("Database/Usuarios.csv");
+
+        //     var logado =
+        //     csv.Find(
+        //         x =>
+        //         x.Split(";")[4] == form ["Email"] || x.Split(";")[5] == form ["Username"] &&
+        //         x.Split(";")[6] == form ["Senha"]
+        //     );
+
+        //     if(logado != null)
+        //     {
+        //         HttpContext.Session.SetString("_UserName", logado.Split(";")[1]);
+        //         return LocalRedirect("~/");
+        //     }
+
+        //     Mensagem = "Dados incorretos, tente novamente...";
+        //     return LocalRedirect("~/Login");
+
+
+
+
+        // }
+
         public void Seguir(){
+
+
             
         }
+
+        
         
         
         
