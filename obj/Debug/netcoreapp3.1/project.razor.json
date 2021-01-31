@@ -14402,13 +14402,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\mrodr\\Documents\\GitHub\\InstaDev-s\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\mrodr\\Documents\\GitHub\\InstaDev-s\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\mrodr\\Documents\\GitHub\\InstaDev-s\\Views\\Login\\Index.cshtml",
+      "TargetPath": "Views\\Login\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14424,6 +14419,11 @@
     {
       "FilePath": "c:\\Users\\mrodr\\Documents\\GitHub\\InstaDev-s\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\mrodr\\Documents\\GitHub\\InstaDev-s\\Views\\Login\\Privacy.cshtml",
+      "TargetPath": "Views\\Login\\Privacy.cshtml",
       "FileKind": "mvc"
     }
   ],
