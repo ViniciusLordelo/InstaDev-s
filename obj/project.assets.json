@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Ariel\\.nuget\\packages\\": {}
+    "C:\\Users\\JoViO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ariel\\OneDrive\\Desktop\\InstaDev-s\\InstaDev-s.csproj",
+      "projectUniqueName": "C:\\Users\\JoViO\\OneDrive\\Área de Trabalho\\InstaDev-s\\InstaDev-s.csproj",
       "projectName": "InstaDev-s",
-      "projectPath": "C:\\Users\\Ariel\\OneDrive\\Desktop\\InstaDev-s\\InstaDev-s.csproj",
-      "packagesPath": "C:\\Users\\Ariel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ariel\\OneDrive\\Desktop\\InstaDev-s\\obj\\",
+      "projectPath": "C:\\Users\\JoViO\\OneDrive\\Área de Trabalho\\InstaDev-s\\InstaDev-s.csproj",
+      "packagesPath": "C:\\Users\\JoViO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JoViO\\OneDrive\\Área de Trabalho\\InstaDev-s\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ariel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\JoViO\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

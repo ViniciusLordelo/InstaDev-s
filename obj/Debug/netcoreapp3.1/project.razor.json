@@ -14397,8 +14397,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\JoViO\\OneDrive\\Área de Trabalho\\InstaDev-s\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\JoViO\\OneDrive\\Área de Trabalho\\InstaDev-s\\Views\\Feed\\Index.cshtml",
+      "TargetPath": "Views\\Feed\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14419,11 +14419,6 @@
     {
       "FilePath": "c:\\Users\\JoViO\\OneDrive\\Área de Trabalho\\InstaDev-s\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\JoViO\\OneDrive\\Área de Trabalho\\InstaDev-s\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],

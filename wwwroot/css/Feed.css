@@ -64,7 +64,7 @@ header
     background-image: url("../img/Lupa.svg");
     background-repeat: no-repeat;
     background-position-x: 64px;
-    background-position-y: 4px;
+    background-position-y: 3px;
     background-size: 10px;
     color: rgba(175, 175, 175, 1); 
     display: flex;
@@ -251,12 +251,11 @@ main
     border-radius: 5px;
     background: #2686CC;
     color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.btn span 
-{
-    text-align: center;
-}
 /* final postar */
 
 /* inicio postagem */
