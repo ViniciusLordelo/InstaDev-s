@@ -7,19 +7,19 @@ namespace InstaDev_s.Models
         public string Legenda { get; set; }
         public int Likes { get; set; }
         
-        public CriarPublicacao(){
+        public void CriarPublicacao(){
 
         }
-        public ListarPublicacao(){
+        public void ListarPublicacao(){
 
         }
-        public EditarPublicação(){
+        public void EditarPublicação(){
 
         }
-        public ExcluirPublicação(){
+        public void ExcluirPublicação(){
 
         }
-        public Curtir(){
+        public void Curtir(){
             
         }
         

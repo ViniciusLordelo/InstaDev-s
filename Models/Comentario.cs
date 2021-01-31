@@ -6,16 +6,16 @@ namespace InstaDev_s.Models
         
         public string Mensagem { get; set; }
 
-        public CriarComentario(){
+        public void CriarComentario(){
 
         }
-        public ListarComentario(){
+        public void ListarComentario(){
 
         }
-        public EditarComentario(){
+        public void EditarComentario(){
 
         }
-        public ExcluirComentario(){
+        public void ExcluirComentario(){
 
         }
     }
