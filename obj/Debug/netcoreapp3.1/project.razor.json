@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\InstaDev-s.csproj",
+  "FilePath": "c:\\Users\\mrodr\\Documents\\GitHub\\InstaDev-s\\InstaDev-s.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14392,38 +14392,38 @@
   "RootNamespace": "InstaDev_s",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\Views\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\mrodr\\Documents\\GitHub\\InstaDev-s\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\mrodr\\Documents\\GitHub\\InstaDev-s\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Users\\mrodr\\Documents\\GitHub\\InstaDev-s\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\mrodr\\Documents\\GitHub\\InstaDev-s\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\mrodr\\Documents\\GitHub\\InstaDev-s\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\mrodr\\Documents\\GitHub\\InstaDev-s\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\mrodr\\Documents\\GitHub\\InstaDev-s\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     }
   ],
