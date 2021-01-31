@@ -30,7 +30,6 @@ header
     width: 50%;
     height: 100%;
     margin: auto;
-    
 }
 
 .flex-center-bt
@@ -257,7 +256,6 @@ main
 .btn span 
 {
     text-align: center;
-
 }
 /* final postar */
 
@@ -342,6 +340,10 @@ main
     color: #000000;
 }
 
+.comentarios
+{
+    margin-top: 12px;
+}
 
 .comentarios p
 {
@@ -349,6 +351,45 @@ main
     width: 114px;
     font-family: 'Segoe UI';
     font-weight: 600;
+    font-size: 13px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.coment 
+{
+    display: flex ;
+    margin-left: 20px;
+    height: 20px;
+}
+
+.coment p
+{
+    width: 100px;
+    border-radius: 'nullpx';
+    font-family: 'Segoe UI';
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.coment a
+{
+    width: 70px;
+    border-radius: 'nullpx';
+    font-family: 'Segoe UI';
+    font-size: 13px;
+    line-height: 17px;
+    color: #2686CC;
+    text-decoration: none;       /*retirar traço embaixo do a=href*/
+}
+
+.coment span
+{
+    height: 17px;
+    width: 235px;
+    border-radius: 'nullpx';
+    font-family: 'Segoe UI';
     font-size: 13px;
     line-height: 17px;
     color: #000000;
