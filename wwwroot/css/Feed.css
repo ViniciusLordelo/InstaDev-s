@@ -25,21 +25,21 @@ header
     background-color: white;
 }
 
-.content
+.F-content
 {
     width: 50%;
     height: 100%;
     margin: auto;
 }
 
-.flex-center-bt
+.F-flex-center-bt
 {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.pesquisa
+.F-pesquisa
 {
     width: 215px;
     height: 28px;
@@ -49,7 +49,7 @@ header
     margin-left: 100px;
 }
 
-.input
+.F-input
 {
     width: 100%;
     height: 100%;
@@ -59,7 +59,7 @@ header
     background: #FAFAFA;
 }
 
-.input::placeholder
+.F-input::placeholder
 {
     background-image: url("../img/Lupa.svg");
     background-repeat: no-repeat;
@@ -72,7 +72,7 @@ header
     justify-content: center;
 }
 
-.links
+.F-links
 {
     list-style-type: none;
     width: 220px;
@@ -86,16 +86,16 @@ main
 {
     display: flex;
 }
-.alinhar
+.F-alinhar
 {
     padding-top:24px ;
 }
 
-.conteiner
+.F-conteiner
 {
     display: flex;
 }
-.storyes
+.F-storyes
 {
     width: 610px;
     height: 113px;
@@ -105,12 +105,12 @@ main
     background: #ffffff;
 }
 
-.storyes nav
+.F-storyes nav
 {
     width: 100%;
     margin-top: 16px;
 }
-.storyes ul
+.F-storyes ul
 {
     
     Top: 16px;
@@ -121,7 +121,7 @@ main
     font-size: 10px;                /* tamanho da letra*/
     list-style-type:none ;         /* retirar bolinhas da ul*/
 }
-.storyes a
+.F-storyes a
 {
     text-decoration: none;
     color: black;
@@ -131,7 +131,7 @@ main
 
 }
 
-.storyes img
+.F-storyes img
 {
     Width: 62px;
     Height: 62px;
@@ -140,7 +140,7 @@ main
 /* final do stories */
 
 /* imicio perfil */
-.perfil
+.F-perfil
 {
     padding-top: 15px;
     margin-left: 10px;
@@ -149,20 +149,20 @@ main
    
 }
 
-.descr
+.F-descr
 {
    margin-top: 15px;
    margin-left: 15px;
 }
 
-.descr p
+.F-descr p
 {
     font-family: 'Segoe UI', Tahoma;
     font-size: 16px;
     font-weight: 600;
 }
 
-.descr span
+.F-descr span
 {
     font-family: 'Segoe UI';
     font-size: 16px;
@@ -172,7 +172,7 @@ main
 /* final perfil */
 
 /* inicio postar */
-.postar
+.F-postar
 {
     height: 166px;
     width: 610px;
@@ -183,7 +183,7 @@ main
 
 }
 
-.post
+.F-post
 {
     display: flex;
     font-family: 'Segoe UI';
@@ -193,24 +193,24 @@ main
     margin: 20px 0 0 30px ;
 }
 
-.postar img
+.F-postar img
 {
     height: 42px;
     width: 42px;
     border-radius: 100px;
 }
 
-.post p
+.F-post p
 {
     margin-left: 20px;
 }
 
-.botoes
+.F-botoes
 {
     display: flex;
     justify-content: center;
 }
-.btns
+.F-btns
 {
     align-items: center;
     width: 550px;;
@@ -219,7 +219,7 @@ main
     margin-top: 30px;
 }
 
-.descricao
+.F-descricao
 {
     height: 27px;
     width: 231px;
@@ -234,7 +234,7 @@ main
     text-align: center;
 }
 
-.escolha
+.F-escolha
 {
     height: 27px;
     width: 157px;
@@ -243,7 +243,7 @@ main
     text-align: center  ;
 }
 
-.btn
+.F-btn
 {
     font-family: 'Segoe UI' ;
     height: 27px;
@@ -259,7 +259,7 @@ main
 /* final postar */
 
 /* inicio postagem */
-.postagem
+.F-postagem
 {
     margin-top: 38px ;
     height: 610px;
@@ -269,14 +269,14 @@ main
     box-sizing: border-box;
 }
 
-.comentar_txt ::placeholder
+.F-comentar_txt ::placeholder
 {
     width: 61px;
     height: 16px;
     border-radius: 'nullpx';
 
 }
-.comentar_txt
+.F-comentar_txt
 {
     width: 220px;
     color: black;
@@ -286,18 +286,18 @@ main
     padding-left: 7px;  
 }
 
-.postagem_pf
+.F-postagem_pf
 {
     display: flex;
     margin: 13px 13px 16px 16px ;
 }
 
-.postagem_descr 
+.F-postagem_descr 
 {
     margin-left: 13px;
 }
 
-.postagem_descr p
+.F-postagem_descr p
 {
     
     font-family:'Segoe UI';
@@ -308,7 +308,7 @@ main
     color: #000000;
 }
 
-.postagem_descr span
+.F-postagem_descr span
 {
     font-family: 'Segoe UI';
     font-size: 13px;
@@ -316,18 +316,18 @@ main
     color: #000000;
 }
 
-.comentar img
+.F-comentar img
 {
     margin-left: 21px;
     margin-top: 14px;
 }
 
-.comentar_txt
+.F-comentar_txt
 {
     margin-left: 10px;
 }
 
-.curtidas
+.F-curtidas
 {
     margin-left: 21px;
     margin-top:6.5px;
@@ -339,12 +339,12 @@ main
     color: #000000;
 }
 
-.comentarios
+.F-comentarios
 {
     margin-top: 12px;
 }
 
-.comentarios p
+.F-comentarios p
 {
     height: 17px;
     width: 114px;
@@ -355,14 +355,14 @@ main
     color: #000000;
 }
 
-.coment 
+.F-coment 
 {
     display: flex ;
     margin-left: 20px;
     height: 20px;
 }
 
-.coment p
+.F-coment p
 {
     width: 100px;
     border-radius: 'nullpx';
@@ -372,7 +372,7 @@ main
     text-align: left;
 }
 
-.coment a
+.F-coment a
 {
     width: 70px;
     border-radius: 'nullpx';
@@ -383,7 +383,7 @@ main
     text-decoration: none;       /*retirar traço embaixo do a=href*/
 }
 
-.coment span
+.F-coment span
 {
     height: 17px;
     width: 235px;

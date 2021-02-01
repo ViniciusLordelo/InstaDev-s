@@ -8,28 +8,35 @@ namespace InstaDev_s.Controllers
     public class LoginController : Controller
     {
         Usuario usuarioModel = new Usuario();
-        public IActionResult Logar(IFormCollection form){
-        List<string> csv = usuarioModel.ReadAllLinesCSV("Database/Usuarios.csv");
-
-        var logado =
-        csv.Find(
-            x =>
-            x.Split(";")[4] == form ["Email"] || x.Split(";")[5] == form ["Username"] &&
-            x.Split(";")[6] == form ["Senha"]
-        );
-
-        if(logado != null)
+        public IActionResult Logar(IFormCollection form)
         {
-            HttpContext.Session.SetString("_UserName", logado.Split(";")[1]);
-            return LocalRedirect("~/");
+            List<string> csv = usuarioModel.ReadAllLinesCSV("Database/Usuarios.csv");
+
+            var logado =
+            csv.Find(
+                x =>
+                x.Split(";")[4] == form["Email"] || x.Split(";")[5] == form["Username"] &&
+                x.Split(";")[6] == form["Senha"]
+            );
+
+            if (logado != null)
+            {
+                HttpContext.Session.SetString("_UserName", logado.Split(";")[1]);
+                return LocalRedirect("~/");
+            }
+
+            usuarioModel.Mensagem = "Dados incorretos, tente novamente...";
+            return LocalRedirect("~/Login");
         }
 
-        usuarioModel.Mensagem = "Dados incorretos, tente novamente...";
-        return LocalRedirect("~/Login");
-}
+        public IActionResult Index()
+        {
+            return View();
+        }
 
-        
     }
+
+    
 
 
 

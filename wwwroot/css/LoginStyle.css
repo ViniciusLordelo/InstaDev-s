@@ -13,12 +13,12 @@ body{
     align-items: center;
     justify-content: center;
 }
-.corpo{
+.L-corpo{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.retangulo1{
+.L-retangulo1{
     width: 342px;
     height: 380px;
     display: flex;
@@ -30,25 +30,25 @@ body{
     box-sizing: border-box;
 
 }
-.content
+.L-content
 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; 
 }
-.retangulo1 a{
+.L-retangulo1 a{
     text-decoration: none;
     font-size: 12px;
     font-weight: 400;
     color: #2686CC;
 }
-.form_login{
+.L-form_login{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.form_login input{
+.L-form_login input{
     width: 267px;
     height: 35px;
     margin-bottom: 9px;
@@ -56,13 +56,13 @@ body{
     border: 1px solid #DCDCDC;
     border-radius: 2px;
 }
-.form_login .input1{
+.L-form_login .input1{
     margin-top: 24px;
 }
-.form_login .input2{
+.L-form_login .input2{
     margin-bottom: 17px;
 }
-.form_login button{
+.L-form_login button{
     width: 267px;
     height: 30px;
     background:#2686CC;
@@ -72,14 +72,14 @@ body{
     border: 1px solid;
     border-radius: 2px;
 }
-.ou{
+.L-ou{
     display: flex;
     align-items: center;
     margin: 32px 0;
     font-size: 12px;
     color: #909090;
 }
-.ou h2{
+.L-ou h2{
     font-family: Segoe UI;
     font-style: normal;
     font-weight: normal;
@@ -87,11 +87,12 @@ body{
     line-height: 16px;
     margin: 0 16px;
 }
-.ou hr{
+.L-ou hr{
     width: 109px;
-    height: 0px;
+    height: 1px;
+    background-color: #cbcbcb;
 }
-.retangulo2{
+.L-retangulo2{
     width:342px;
     height: 75px;
     background: #FFFFFF;
@@ -102,20 +103,20 @@ body{
     align-items: center;
     justify-content: center;
 }
-.retangulo2 h2{
+.L-retangulo2 h2{
     text-align: center;
     font-size: 12px;
     font-weight: 600;
     line-height: 16px;
 }
-.retangulo2 a{
+.L-retangulo2 a{
     text-decoration: none;
     color: #2686CC;
 }
-.retangulo3{
+.L-retangulo3{
     text-align: center;
 }
-.retangulo3 h2{
+.L-retangulo3 h2{
     font-family: Segoe UI;
     font-style: normal;
     font-weight: normal;
@@ -123,6 +124,6 @@ body{
     line-height: 16px;
     padding: 21px 0;
 }
-.retangulo3 a{
+.L-retangulo3 a{
     align-items: center;
 }

@@ -8,16 +8,27 @@ namespace InstaDev_s.Models
 {
     public class Usuario : InstadevBase
     {
-        public int IdUsuario { get; set; }
+
+        public System.Guid IdUsuario { get; set; }
+
         public string Nome { get; set; }
+
         public string Foto { get; set; }
+
         public DateTime DataNascimento { get; set; }
+
         public int[] Seguidos { get; set; }
+
         public string Email { get; set; }
+
         public string Username { get; set; }
+
         public string Senha { get; set; }
 
         public string Mensagem { get; set; }
+
+        Guid guid = Guid.NewGuid();
+        
         
         
 
@@ -40,7 +51,7 @@ namespace InstaDev_s.Models
             {
                 string[] linha = item.Split(";");
                 Usuario novoUsuario = new Usuario();
-                novoUsuario.IdUsuario = int.Parse(linha[0]);
+                novoUsuario.IdUsuario = Guid.Parse(linha[0]);
                 novoUsuario.Foto = linha[1];
                 novoUsuario.DataNascimento = DateTime.Parse(linha[2]);
                 novoUsuario.Nome = linha[3];

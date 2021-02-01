@@ -8,7 +8,7 @@ body
  justify-content: center; 
  
 }
-.corpo
+.C-corpo
 {
 
  display: flex;
@@ -20,7 +20,7 @@ body
 
 }
 
-.content h2
+.C-content h2
 {
    
  font-family: "Segoe UI";
@@ -33,7 +33,7 @@ body
 
     
 }
-.content
+.C-content
 {
 
  justify-content: center;
@@ -43,7 +43,7 @@ body
 
 }
 
-.retangulo1
+.C-retangulo1
 {
 
  background-color: rgb(255, 255, 255);
@@ -65,13 +65,13 @@ body
 
 }
 
-.form_cadastro
+.C-form_cadastro
 {
  display: flex;
  flex-direction: column;
 }
 
-.caixadetermos
+.C-caixadetermos
 {
 
  text-align: center;
@@ -79,7 +79,7 @@ body
  flex-direction: column;
 
 }
-.caixadetermos p
+.C-caixadetermos p
 {
 
  font-family: "Segoe UI";
@@ -92,7 +92,7 @@ body
 
 }
 
-.retangulo2
+.C-retangulo2
 {
  
  width: 342px;
@@ -106,7 +106,7 @@ body
 
 
 }
-.content2
+.C-content2
 {
 
  background-color: rgb(255, 255, 255);
@@ -122,25 +122,25 @@ body
 
 }
 
-.content2 p
+.C-content2 p
 {
  margin-top: 15px; 
 }
 
-.retangulo3
+.C-retangulo3
 {
 
  text-align: center;
 
 }
 
-.retangulo2 a
+.C-retangulo2 a
 {
  text-decoration: none;
  color: #2686CC;
 
 }
-.retangulo3 h2
+.C-retangulo3 h2
 {
 
  font-family: "Segoe UI";
@@ -154,7 +154,7 @@ body
 }
 
 
-.form_cadastro button 
+.C-form_cadastro button 
 {
 
  width: 267px;
@@ -169,7 +169,7 @@ body
  
 }
 
-.form_cadastro input
+.C-form_cadastro input
 {
  margin-bottom: 9px;
  width: 267px;

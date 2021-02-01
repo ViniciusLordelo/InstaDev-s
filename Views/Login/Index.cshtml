@@ -2,21 +2,21 @@
     ViewData["Title"] = "Login";
 }
 
-<body>
-    <div class="corpo">
+<body class="L-body">
+    <div class="L-corpo">
 
-        <div class="retangulo1">
-            <div class="content">
+        <div class="L-retangulo1">
+            <div class="L-content">
 
                 <img src="~/LoginImg/Instadev.svg" alt="Logo Instadev">
                 
-                <form action="" class="form_login">
+                <form action="" class="L-form_login">
                     <input type="email" class="input1" placeholder="Email" required />
                     <input type="password" class="input2" placeholder="Senha" required />
                     <button type="submit">Entrar</button>
                 </form>
 
-                <div class="ou">
+                <div class="L-ou">
                     <hr>
                     <h2>OU</h2>
                     <hr>
@@ -26,14 +26,14 @@
             </div>
         </div>
 
-        <div class="retangulo2">
-            <div class="content2">
+        <div class="L-retangulo2">
+            <div class="L-content2">
 
-                <h2>Não tem uma conta? <a href="#">Cadastre-se</a></h2>
+                <h2>Não tem uma conta? <a asp-area="" asp-action="CadastrarUsuario" asp-controller="Usuario">Cadastre-se</a></h2>
             </div>
         </div>
         
-        <div class="retangulo3">
+        <div class="L-retangulo3">
             <h2>Obtenha o aplicativo</h2>
             
             <a target="_blank" href="https://apps.apple.com/br/app/instagram/id389801252"><img src="LoginImg/app_store 1.svg"

@@ -1,26 +1,26 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Cadastrar Usuário";
 }
 
-<body>
-    <div class="corpo">
+<body class="C-Body">
+    <div class="C-corpo">
 
 
-        <div class="retangulo1">
+        <div class="C-retangulo1">
 
 
-            <div class="content">
+            <div class="C-content">
 
                 <img src="imgCadastro/Instadev.svg" alt="Logo Instadev">
                 <h2>Cadastre-se para ver fotos e<br> vídeos dos seus amigos</h2>
 
 
-                <form action="" class="form_cadastro">
+                <form action='@Url.Action("CadastrarUsuario")' method= "POST" class="C-form_cadastro" enctype="multipart/form-data">
 
-                    <input type="email" class="input_Cadastro" placeholder=" Email">
-                    <input type="fullname" class="input_Cadastro" placeholder=" Nome completo">
-                    <input type="username" class="input_Cadastro" placeholder=" Nome de usuário">
-                    <input type="password" class="input_Cadastro" placeholder=" Senha">
+                    <input name="Email"  type="email" class="C-input_Cadastro" placeholder=" Email">
+                    <input name="Nome" type="fullname" class="C-input_Cadastro" placeholder=" Nome completo">
+                    <input name="Username" type="username" class="C-input_Cadastro" placeholder=" Nome de usuário">
+                    <input name="Senha" type="password" class="C-input_Cadastro" placeholder=" Senha">
 
                     <button type="submit">Cadastre-se</button>
 
@@ -28,7 +28,7 @@
 
 
 
-                <div class="caixadetermos">
+                <div class="C-caixadetermos">
                     <p>Ao se cadastrar, você concorda com nossos<br>Termos,Política de Dados e Política de Cookies.</p>
                 </div>
                 
@@ -38,16 +38,16 @@
         </div>
 
 
-        <div class="retangulo2">
+        <div class="C-retangulo2">
 
-            <div class="content2">
+            <div class="C-content2">
                 <p>Tem uma conta? <a href="#">Conecte-se</a></p>
             </div>
 
         </div>
 
 
-        <div class="retangulo3">
+        <div class="C-retangulo3">
 
             <h2>Obtenha o aplicativo</h2>
 
