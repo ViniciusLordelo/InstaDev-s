@@ -64,14 +64,14 @@ namespace InstaDev_s.Models
 
         }
 
-            public void ExcluirPublicação(int id){
+        //     public void ExcluirPublicação(int id){
             
-            publicacao.Delete(id);
-            ViewBag.Equipes = publicacao.ReadAll();
-            return LocalRedirect("~/Equipe/Listar");
+        //     publicacao.Delete(id);
+        //     ViewBag.Equipes = publicacao.ReadAll();
+        //     return LocalRedirect("~/Equipe/Listar");
 
 
-        }
+        // }
 
         public void Curtir(){
             
