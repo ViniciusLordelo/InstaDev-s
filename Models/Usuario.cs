@@ -33,7 +33,7 @@ namespace InstaDev_s.Models
             string[] linhas = {Prepare(u)};
             File.AppendAllLines(PATH, linhas);
         }
-        public List<Usuario> MostrarUsuario(){
+        public List<Usuario> MostrarUsuario(){ //Perfil
             List<Usuario> usuarios = new List<Usuario>();
             string[] linhas = File.ReadAllLines(PATH);
             foreach (var item in linhas)
@@ -78,7 +78,7 @@ namespace InstaDev_s.Models
 
         } 
 
-        public void ListarUsuario(){
+        public void ListarUsuario(){ //Stories
 
         }
 
