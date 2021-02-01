@@ -4,23 +4,23 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - InstaDev_s</title>
-    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/perfil.css">
 </head>
 <body>
 
     <header>
     <div class="content flex-center-bt">
-        <a href=""><img src="img/Logo.svg" alt=""></a>
+        <a href=""><img src="imgPerfil/Logo.svg" alt=""></a>
         <form class="pesquisa" action="">
             <input class="input"  placeholder="Pesquisar" type="text">
         </form>
         <nav>
             <ul class="links flex-center-bt">
-                <li><a href=""><img src="img/Casa.svg" alt=""></a></li>
-                <li><a href=""><img src="img/Aviao.svg" alt=""></a></li>
-                <li><a href=""><img src="img/Compasso.svg" alt=""></a></li>
-                <li><a href=""><img src="img/Coracao.svg" alt=""></a></li>
-                <li><a href=""><img src="img/User.svg" alt=""></a></li>
+                <li><a href=""><img src="imgPerfil/Casa.svg" alt=""></a></li>
+                <li><a href=""><img src="imgPerfil/Aviao.svg" alt=""></a></li>
+                <li><a href=""><img src="imgPerfil/Compasso.svg" alt=""></a></li>
+                <li><a href=""><img src="imgPerfil/Coracao.svg" alt=""></a></li>
+                <li><a href=""><img src="imgPerfil/User.svg" alt=""></a></li>
             </ul>
         </nav>
     </div>
@@ -31,12 +31,6 @@
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - InstaDev_s - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
