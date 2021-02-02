@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #F1F1F1
+}
+
+.E-flex-center-bt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.E-pesquisa {
+    width: 215px;
+    height: 28px;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-left: 100px;
+}
+
+.E-pesquisa input {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, "Geneva", Verdana, sans-serif;
+    text-align: center;
+    background-image: url("../img/Lupa.svg");
+    background-repeat: no-repeat;
+    background-position: 105px;
+    background: #FAFAFA;
+}
+.E-links {
+    list-style-type: none;
+    width: 200px;
+}
+
+/* Fim do Header */
+/* Começo do Main */
+.E-contain {
+    display: flex;
+    justify-content: center;
+    background: #FAFAFA;
+    width: 100%;
+    height: 100vh;
+}
+.E-conteudo1 {
+    width: 50%;
+    display: flex;
+    padding-top: 24px;
+}
+
+.E-content {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+}
+
+.E-container {
+    width: 233px;
+    height: 610px;
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
+
+}
+
+.E-linha {
+    position: absolute;
+    width: 60px;
+    border: 1px solid #000000;
+    transform: rotate(90deg);
+    margin-top: 28px;
+    margin-left: -29px;
+}
+
+.E-container1 {
+    width: 720px;
+    height: 610px;
+    background: #ffffff;
+    border-top: 1px solid #F1F1F1;
+    border-right: 1px solid #F1F1F1;
+    border-bottom: 1px solid #F1F1F1;;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+.E-foto-user {
+    display: flex;
+    margin-right: 230px;
+
+}
+.E-foto-user img {
+    width: 50px;
+    height: auto;
+}
+.E-info-user {
+    display: flex;
+    flex-direction: column;
+}
+.E-alterar {
+    margin-left: 17px;
+}
+.E-info-user h2 {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin-right: 40px;
+}
+.E-editarnome {
+    display: flex;
+    margin-top: 20px;
+}
+.E-nomeimput {
+    padding-top: 5px;
+}
+.E-texto1 {
+    padding-top: 10px;
+}
+.E-texto2 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.E-Editar p {
+    padding-bottom: 20px;
+}
+.E-nomeimput {
+    margin-right: 12px;
+}
+.E-editperfil {
+    display: flex;
+    margin-right: 63px;
+}
+.E-editperfil label {
+    margin-right: 12px;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+}
+.E-labelperfil {
+    margin-top: 3px;
+}
+.E-editemail {
+    display: flex;
+    margin-left: 11px;
+}
+.E-editemail1 label {
+    margin-right: 5px;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+}
+.E-nomeimput label {
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+}
+.E-conteudo {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.E-infopessoais p {
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #575757;
+}
+.E-container h2 {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Segoi UI', Tahoma, "Geneva", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    padding-top: 17px;
+    padding-left: 20px;
+}
+
+.E-container1 h2 {
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    text-align: center;
+}
+.E-container1 h3 {
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #2686CC;
+}
+
+.E-container1 p {
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #909090;
+}
+
+.E-container1 label {
+    font-style: normal;
+    font-family: "Segoe UI";
+    color: #000000;
+}
+.E-imputnome {
+    width: 354px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding-left: 7px;
+}
+.E-imputusuario {
+    width: 354px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding-left: 7px;
+}
+.E-imputusuario1 p {
+    padding-bottom: 15px;
+}
+.E-imputemail {
+    width: 354px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding-left: 7px;
+}
+.E-enviar {
+    width: 66px;
+    height: 30px;
+    left: 925px;
+    top: 584px;
+    background: #2686CC;
+    border-radius: 2px;
+    color: white;
+}
+.E-Editar a {
+    color:#2686CC;
+    text-decoration: none;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+}
+.E-botao {
+    padding-top: 40px;
+    margin-left: 30px;
+}
+.E-botao a {
+    text-decoration: none;
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2686CC;
+    margin-left: 50px;
+}
+/* Fim do Main */

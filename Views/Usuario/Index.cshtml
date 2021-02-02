@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Cadastrar Usuário";
+}
+
+<body class="C-Body">
+    <div class="C-corpo">
+
+
+        <div class="C-retangulo1">
+
+
+            <div class="C-content">
+
+                <img src="~/imgCadastro/Instadev.svg" alt="Logo Instadev">
+                <h2>Cadastre-se para ver fotos e<br> vídeos dos seus amigos</h2>
+
+
+                <form action='@Url.Action("CadastrarUsuario")' method= "POST" class="C-form_cadastro" enctype="multipart/form-data">
+
+                    <input name="Email"  type="email" class="C-input_Cadastro" placeholder=" Email"required >
+                    <input name="Nome" type="fullname" class="C-input_Cadastro" placeholder=" Nome completo" required>
+                    <input name="Username" type="username" class="C-input_Cadastro" placeholder=" Nome de usuário" required>
+                    <input name="Senha" type="password" class="C-input_Cadastro" placeholder=" Senha" required>
+
+                    <button type="submit">Cadastre-se</button>
+
+                </form>
+
+
+
+                <div class="C-caixadetermos">
+                    <p>Ao se cadastrar, você concorda com nossos<br>Termos,Política de Dados e Política de Cookies.</p>
+                </div>
+                
+            </div>
+
+
+        </div>
+
+
+        <div class="C-retangulo2">
+
+            <div class="C-content2">
+                <p>Tem uma conta? <a href="#">Conecte-se</a></p>
+            </div>
+
+        </div>
+
+
+        <div class="C-retangulo3">
+
+            <h2>Obtenha o aplicativo</h2>
+
+
+            <a target="_blank" href="https://apps.apple.com/br/app/instagram/id389801252"><img src="~/imgCadastro/app_store 1.svg"
+                    alt="Link de dowload do aplicativo na App Store" /></a>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.instagram.android"><img
+                    src="~/imgCadastro/google_play 1.svg" alt="Link  de dowload do aplicativo na Play Store" /></a>
+
+
+
+        </div>
+
+    </div>
+
+</body>

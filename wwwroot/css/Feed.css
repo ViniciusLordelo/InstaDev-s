@@ -1,0 +1,395 @@
+/* Inicio do Header */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+ }
+
+html
+{
+    background-color: rgba(250, 250, 250, 1);
+}
+
+body
+{
+    max-width: 1920px;
+    font-family: '-apple-system, BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header
+{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #F1F1F1;
+    background-color: white;
+}
+
+.F-content
+{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+}
+
+.F-flex-center-bt
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.F-pesquisa
+{
+    width: 215px;
+    height: 28px;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-left: 100px;
+}
+
+.F-input
+{
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-align: center;
+    background-position: 105px;
+    background: #FAFAFA;
+}
+
+.F-input::placeholder
+{
+    background-image: url("../img/Lupa.svg");
+    background-repeat: no-repeat;
+    background-position-x: 64px;
+    background-position-y: 3px;
+    background-size: 10px;
+    color: rgba(175, 175, 175, 1); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.F-links
+{
+    list-style-type: none;
+    width: 220px;
+}
+
+/* Fim do Header */
+
+/* Inicio storyes */
+
+main 
+{
+    display: flex;
+}
+.F-alinhar
+{
+    padding-top:24px ;
+}
+
+.F-conteiner
+{
+    display: flex;
+}
+.F-storyes
+{
+    width: 610px;
+    height: 113px;
+    border: 1px solid #F1F1F1;      /*retangulo */
+    box-sizing: border-box;
+    display: flex;
+    background: #ffffff;
+}
+
+.F-storyes nav
+{
+    width: 100%;
+    margin-top: 16px;
+}
+.F-storyes ul
+{
+    
+    Top: 16px;
+    Left: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 10px;                /* tamanho da letra*/
+    list-style-type:none ;         /* retirar bolinhas da ul*/
+}
+.F-storyes a
+{
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI' ;
+    font-size: 12px;
+    font-weight: 400;
+
+}
+
+.F-storyes img
+{
+    Width: 62px;
+    Height: 62px;
+}
+
+/* final do stories */
+
+/* imicio perfil */
+.F-perfil
+{
+    padding-top: 15px;
+    margin-left: 10px;
+    display: flex;
+    margin-left: 30px;
+   
+}
+
+.F-descr
+{
+   margin-top: 15px;
+   margin-left: 15px;
+}
+
+.F-descr p
+{
+    font-family: 'Segoe UI', Tahoma;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.F-descr span
+{
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    font-weight: 600;
+    color: #B6B6B6;
+}
+/* final perfil */
+
+/* inicio postar */
+.F-postar
+{
+    height: 166px;
+    width: 610px;
+    margin-top: 38px;
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
+
+}
+
+.F-post
+{
+    display: flex;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 20px 0 0 30px ;
+}
+
+.F-postar img
+{
+    height: 42px;
+    width: 42px;
+    border-radius: 100px;
+}
+
+.F-post p
+{
+    margin-left: 20px;
+}
+
+.F-botoes
+{
+    display: flex;
+    justify-content: center;
+}
+.F-btns
+{
+    align-items: center;
+    width: 550px;;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.F-descricao
+{
+    height: 27px;
+    width: 231px;
+    border-radius: 5px;
+    background: #FAFAFA;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    font-family: 'Segoe UI' ;
+    font-weight: 600;
+    font-size: 12px;
+    color: #ABABAB;
+    text-align: center;
+}
+
+.F-escolha
+{
+    height: 27px;
+    width: 157px;
+    border-radius: 5px;
+    background: #D1D1D1;
+    text-align: center  ;
+}
+
+.F-btn
+{
+    font-family: 'Segoe UI' ;
+    height: 27px;
+    width: 140px;
+    border-radius: 5px;
+    background: #2686CC;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* final postar */
+
+/* inicio postagem */
+.F-postagem
+{
+    margin-top: 38px ;
+    height: 610px;
+    width: 610px;
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
+}
+
+.F-comentar_txt ::placeholder
+{
+    width: 61px;
+    height: 16px;
+    border-radius: 'nullpx';
+
+}
+.F-comentar_txt
+{
+    width: 220px;
+    color: black;
+    background: #FFFFFF;
+    border-bottom:1px solid #DCDCDC ;   /*só deixar uma linha embaixo*/
+    border-radius: 2px;
+    padding-left: 7px;  
+}
+
+.F-postagem_pf
+{
+    display: flex;
+    margin: 13px 13px 16px 16px ;
+}
+
+.F-postagem_descr 
+{
+    margin-left: 13px;
+}
+
+.F-postagem_descr p
+{
+    
+    font-family:'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.F-postagem_descr span
+{
+    font-family: 'Segoe UI';
+    font-size: 13px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.F-comentar img
+{
+    margin-left: 21px;
+    margin-top: 14px;
+}
+
+.F-comentar_txt
+{
+    margin-left: 10px;
+}
+
+.F-curtidas
+{
+    margin-left: 21px;
+    margin-top:6.5px;
+    height: 17px;
+    width: 114px;
+    border-radius: 'nullpx';
+    font-family: 'Segoe UI';
+    font-size: 13px;
+    color: #000000;
+}
+
+.F-comentarios
+{
+    margin-top: 12px;
+}
+
+.F-comentarios p
+{
+    height: 17px;
+    width: 114px;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.F-coment 
+{
+    display: flex ;
+    margin-left: 20px;
+    height: 20px;
+}
+
+.F-coment p
+{
+    width: 100px;
+    border-radius: 'nullpx';
+    font-family: 'Segoe UI';
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.F-coment a
+{
+    width: 70px;
+    border-radius: 'nullpx';
+    font-family: 'Segoe UI';
+    font-size: 13px;
+    line-height: 17px;
+    color: #2686CC;
+    text-decoration: none;       /*retirar traço embaixo do a=href*/
+}
+
+.F-coment span
+{
+    height: 17px;
+    width: 235px;
+    border-radius: 'nullpx';
+    font-family: 'Segoe UI';
+    font-size: 13px;
+    line-height: 17px;
+    color: #000000;
+}
