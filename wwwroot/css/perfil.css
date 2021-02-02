@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+ }
+
+html
+{
+    background-color: rgba(250, 250, 250, 1);
+}
+
+body
+{
+    max-width: 1920px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header
+{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #F1F1F1;
+    background-color: white;
+}
+
+.P-content
+{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    
+}
+
+.P-flex-center-bt
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.P-pesquisa
+{
+    width: 215px;
+    height: 28px;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-left: 100px;
+}
+
+.P-input
+{
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-align: center;
+    background-position: 105px;
+    background: #FAFAFA;
+}
+
+.P-input::placeholder
+{
+    background-image: url("../img/Lupa.svg");
+    background-repeat: no-repeat;
+    background-position-x: 64px;
+    background-position-y: 4px;
+    background-size: 10px;
+    color: rgba(175, 175, 175, 1); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.P-links
+{
+    list-style-type: none;
+    width: 220px;
+}
+
+/* Fim do Header */
+
+/* Começo do Main */
+
+ .P-info
+{
+    width: 100%;
+    height: 225px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #DCDCDC;
+    
+}
+
+.P-foto-user img
+{
+    width: 152px;
+    height: 154px;
+}
+
+.P-info-user
+{
+    width: 400px;
+    margin-right: 160px;
+}
+
+.P-info-user button
+{
+    color: rgba(38, 134, 204, 1);
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FAFAFA;
+
+}
+
+.P-nome
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.P-num
+{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.P-sair
+{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.P-sair span
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    
+}
+
+/* Início das Publicações */
+
+.P-publi
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    margin-top: 15px;
+    width: 520px;
+    height: 25px;
+}
+
+.P-publi span
+{
+    margin-left: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.P-post
+{
+    width: 930px;
+    height: 400px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    background-color: white;
+}
+
+.P-foto-post
+{
+    width: 430px;
+    height: 100%;
+}
+
+.P-descricao-post
+{
+    width: 500px;
+    height: 100%;
+    font-size: 14px;
+    
+}
+
+.P-user
+{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.P-user img
+{
+    width: 65px;
+    height: 66px;
+}
+
+.P-info-local
+{
+    margin-left: 20px;
+}
+
+.P-info-local span
+{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.P-interacoes
+{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.P-like
+{
+    margin-bottom: 5px;
+}
+
+.P-like img
+{
+    margin-right: 20px;
+}
+
+.P-comentarios
+{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.P-comentario
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.P-comentario img
+{
+    Width: 15px;
+    Height: 13,12px;
+}
+
+.P-usuario-comentario
+{
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.P-ler-comentarios
+{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.P-ler-comentarios button
+{
+    color: rgba(144, 144, 144, 1);
+    background-color: white ;
+}
+
+/* Fim da Publicações */
+
+/* Fim do Main */

@@ -1,0 +1,129 @@
+:root{
+    --azul:#515BD4;
+    --roxo:#8134AF;
+    --rosa:#dd2a7b;
+    --amarelo: #feda77;
+    --laranja:#f58529;
+}
+body{
+    background-color: #FAFAFA;
+    font-family: 'Segoe UI';
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.L-corpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.L-retangulo1{
+    width: 342px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
+
+}
+.L-content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.L-retangulo1 a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: #2686CC;
+}
+.L-form_login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.L-form_login input{
+    width: 267px;
+    height: 35px;
+    margin-bottom: 9px;
+    background: #FAFAFA;
+    border: 1px solid #DCDCDC;
+    border-radius: 2px;
+}
+.L-form_login .input1{
+    margin-top: 24px;
+}
+.L-form_login .input2{
+    margin-bottom: 17px;
+}
+.L-form_login button{
+    width: 267px;
+    height: 30px;
+    background:#2686CC;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    border: 1px solid;
+    border-radius: 2px;
+}
+.L-ou{
+    display: flex;
+    align-items: center;
+    margin: 32px 0;
+    font-size: 12px;
+    color: #909090;
+}
+.L-ou h2{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 16px;
+}
+.L-ou hr{
+    width: 109px;
+    height: 1px;
+    background-color: #cbcbcb;
+}
+.L-retangulo2{
+    width:342px;
+    height: 75px;
+    background: #FFFFFF;
+    border: 1px solid #F4F4F4;
+    box-sizing: border-box;
+    margin-top: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.L-retangulo2 h2{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+}
+.L-retangulo2 a{
+    text-decoration: none;
+    color: #2686CC;
+}
+.L-retangulo3{
+    text-align: center;
+}
+.L-retangulo3 h2{
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 21px 0;
+}
+.L-retangulo3 a{
+    align-items: center;
+}
