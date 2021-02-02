@@ -25,9 +25,7 @@ namespace InstaDev_s.Models
 
         public string Senha { get; set; }
 
-        public string Mensagem { get; set; }
-        public bool logar { get; set; }
-        
+        public string Mensagem { get; set; }        
         
 
         private const string PATH = "Database/Usuarios.csv";
@@ -41,6 +39,9 @@ namespace InstaDev_s.Models
         public void CadastrarUsuario(Usuario u){
             string[] linhas = {Prepare(u)};
             File.AppendAllLines(PATH, linhas);
+        }
+        public void MostrarLogado(Usuario u){
+            
         }
         public List<Usuario> MostrarUsuario(){ //Perfil
             List<Usuario> usuarios = new List<Usuario>();
@@ -57,7 +58,6 @@ namespace InstaDev_s.Models
                 novoUsuario.Username = linha[5];
                 novoUsuario.Senha = linha[6];
                 // novoUsuario.Seguidos = Int32[].Parse(linha[7]);
-
             }
             return usuarios;
         }   
@@ -96,6 +96,9 @@ namespace InstaDev_s.Models
 
 
             
+        }
+
+        public void MostrarInformacoes(String logado){
         }
 
         
