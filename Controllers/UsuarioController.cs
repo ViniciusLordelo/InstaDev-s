@@ -56,8 +56,15 @@ namespace InstaDev_s.Controllers
                 novoUsuario.Foto = "padrao.png";
             }
 
-            usuarioModel.CadastrarUsuario(novoUsuario);
-            ViewBag.Usuario = usuarioModel.MostrarUsuario();
+            if(novoUsuario.Nome != null && novoUsuario.Email != null && novoUsuario.Senha != null && novoUsuario.Username != null)
+            {
+                usuarioModel.CadastrarUsuario(novoUsuario);
+                ViewBag.Usuario = usuarioModel.MostrarUsuario();
+            }else{
+                usuarioModel.Mensagem = "Preencha todos os campos!";
+            }
+
+
 
             return LocalRedirect("~/Usuario/MostrarUsuario");
 

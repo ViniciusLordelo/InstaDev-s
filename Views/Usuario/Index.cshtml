@@ -17,10 +17,10 @@
 
                 <form action='@Url.Action("CadastrarUsuario")' method= "POST" class="C-form_cadastro" enctype="multipart/form-data">
 
-                    <input name="Email"  type="email" class="C-input_Cadastro" placeholder=" Email">
-                    <input name="Nome" type="fullname" class="C-input_Cadastro" placeholder=" Nome completo">
-                    <input name="Username" type="username" class="C-input_Cadastro" placeholder=" Nome de usuário">
-                    <input name="Senha" type="password" class="C-input_Cadastro" placeholder=" Senha">
+                    <input name="Email"  type="email" class="C-input_Cadastro" placeholder=" Email"required >
+                    <input name="Nome" type="fullname" class="C-input_Cadastro" placeholder=" Nome completo" required>
+                    <input name="Username" type="username" class="C-input_Cadastro" placeholder=" Nome de usuário" required>
+                    <input name="Senha" type="password" class="C-input_Cadastro" placeholder=" Senha" required>
 
                     <button type="submit">Cadastre-se</button>
 

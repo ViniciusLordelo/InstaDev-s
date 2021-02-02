@@ -27,8 +27,6 @@ namespace InstaDev_s.Models
 
         public string Mensagem { get; set; }
 
-        Guid guid = Guid.NewGuid();
-        
         
         
 
