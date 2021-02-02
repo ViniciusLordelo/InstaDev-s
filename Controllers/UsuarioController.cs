@@ -66,10 +66,13 @@ namespace InstaDev_s.Controllers
 
             return LocalRedirect("~/Usuario/MostrarUsuario");
 
-            
-
         }
 
+        [Route ("Feed")]
+        public IActionResult Feed()
+        {
+            return View();
+        }
 
     }
 }

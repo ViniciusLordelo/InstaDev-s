@@ -5,9 +5,6 @@ namespace InstaDev_s.Controllers
 {
     public class PublicacaoController
     {
-
-        Publicacao publicacao = new Publicacao();
-
-        
+       
     }
 }
