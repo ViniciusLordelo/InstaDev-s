@@ -12,11 +12,13 @@ html
 
 body
 {
+    display: flex;
+    flex-direction: column;
     max-width: 1920px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-header
+.P-header
 {
     width: 100%;
     height: 50px;
@@ -24,7 +26,7 @@ header
     background-color: white;
 }
 
-.content
+.P-content
 {
     width: 50%;
     height: 100%;
@@ -32,14 +34,14 @@ header
     
 }
 
-.flex-center-bt
+.P-flex-center-bt
 {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.pesquisa
+.P-pesquisa
 {
     width: 215px;
     height: 28px;
@@ -49,7 +51,7 @@ header
     margin-left: 100px;
 }
 
-.input
+.P-input
 {
     width: 100%;
     height: 100%;
@@ -59,7 +61,7 @@ header
     background: #FAFAFA;
 }
 
-.input::placeholder
+.P-input::placeholder
 {
     background-image: url("../img/Lupa.svg");
     background-repeat: no-repeat;
@@ -72,7 +74,7 @@ header
     justify-content: center;
 }
 
-.links
+.P-links
 {
     list-style-type: none;
     width: 220px;
@@ -82,7 +84,7 @@ header
 
 /* Começo do Main */
 
- .info
+ .P-info
 {
     width: 100%;
     height: 225px;
@@ -94,19 +96,19 @@ header
     
 }
 
-.foto-user img
+.P-foto-user img
 {
     width: 152px;
     height: 154px;
 }
 
-.info-user
+.P-info-user
 {
     width: 400px;
     margin-right: 160px;
 }
 
-.info-user button
+.P-info-user button
 {
     color: rgba(38, 134, 204, 1);
     font-weight: 600;
@@ -116,7 +118,7 @@ header
 
 }
 
-.nome
+.P-nome
 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 26px;
@@ -124,7 +126,7 @@ header
     font-weight: 400;
 }
 
-.num
+.P-num
 {
 
     display: flex;
@@ -134,14 +136,14 @@ header
 }
 
 
-.sair
+.P-sair
 {
     display: flex;
     justify-content: space-between;
     
 }
 
-.sair span
+.P-sair span
 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
@@ -152,7 +154,7 @@ header
 
 /* Início das Publicações */
 
-.publi
+.P-publi
 {
     display: flex;
     justify-content: flex-start;
@@ -163,7 +165,7 @@ header
     height: 25px;
 }
 
-.publi span
+.P-publi span
 {
     margin-left: 10px;
     font-weight: 400;
@@ -171,7 +173,7 @@ header
     font-size: 14px;
 }
 
-.post
+.P-post
 {
     width: 930px;
     height: 400px;
@@ -181,13 +183,13 @@ header
     background-color: white;
 }
 
-.foto-post
+.P-foto-post
 {
     width: 430px;
     height: 100%;
 }
 
-.descricao-post
+.P-descricao-post
 {
     width: 500px;
     height: 100%;
@@ -195,7 +197,7 @@ header
     
 }
 
-.user
+.P-user
 {
     display: flex;
     align-items: center;
@@ -203,41 +205,41 @@ header
     margin-left: 30px;
 }
 
-.user img
+.P-user img
 {
     width: 65px;
     height: 66px;
 }
 
-.info-local
+.P-info-local
 {
     margin-left: 20px;
 }
 
-.info-local span
+.P-info-local span
 {
     font-weight: 700;
     font-size: 16px;
 }
 
-.interacoes
+.P-interacoes
 {
     margin-top: 30px;
     margin-left: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.like
+.P-like
 {
     margin-bottom: 5px;
 }
 
-.like img
+.P-like img
 {
     margin-right: 20px;
 }
 
-.comentarios
+.P-comentarios
 {
     margin-top: 30px;
     margin-left: 30px;
@@ -245,33 +247,33 @@ header
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.comentario
+.P-comentario
 {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
 
-.comentario img
+.P-comentario img
 {
     Width: 15px;
     Height: 13,12px;
 }
 
-.usuario-comentario
+.P-usuario-comentario
 {
     font-size: 13px;
     font-weight: 600;
     margin-right: 15px;
 }
 
-.ler-comentarios
+.P-ler-comentarios
 {
     margin-top: 50px;
     margin-left: 30px;
 }
 
-.ler-comentarios button
+.P-ler-comentarios button
 {
     color: rgba(144, 144, 144, 1);
     background-color: white ;

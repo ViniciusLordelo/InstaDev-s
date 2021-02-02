@@ -1,0 +1,193 @@
+
+body 
+{
+ height: 100vh;
+ background-color: #E5E5E5;
+ display : flex;
+ align-items: center;
+ justify-content: center; 
+ 
+}
+.C-corpo
+{
+
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+
+
+}
+
+.C-content h2
+{
+   
+ font-family: "Segoe UI";
+ font-style: normal;
+ font-weight: 600;
+ font-size: 14px;
+ line-height: 19px; 
+ color: #909090;
+ padding: 10px;
+
+    
+}
+.C-content
+{
+
+ justify-content: center;
+ align-items: center;
+ flex-direction: column; 
+
+
+}
+
+.C-retangulo1
+{
+
+ background-color: rgb(255, 255, 255);
+ justify-content: center;
+ align-items: center;
+ width: 342px;
+ height: 461px;
+ left: 789px;
+ top: 149px;
+ border: 1px solid #F1F1F1;
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ font-family: Segoe UI;
+ font-weight: 600;
+ font-size: 14px;
+ line-height: 19px;
+ color: #909090;
+
+}
+
+.C-form_cadastro
+{
+ display: flex;
+ flex-direction: column;
+}
+
+.C-caixadetermos
+{
+
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+
+}
+.C-caixadetermos p
+{
+
+ font-family: "Segoe UI";
+ font-style: normal;
+ font-weight: normal;
+ font-size: 12px;
+ line-height: 16px;
+ color: #909090;
+ margin-top: 17px;
+
+}
+
+.C-retangulo2
+{
+ 
+ width: 342px;
+ height: 75px;
+ left: 789px;
+ top: 619px;
+ background: #FFFFFF;
+ border: 1px solid #F4F4F4;
+ box-sizing: border-box;
+ margin-top: 9px;
+
+
+}
+.C-content2
+{
+
+ background-color: rgb(255, 255, 255);
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ font-family: "Segoe UI";
+ font-style: normal;
+ font-weight: normal;
+ font-size: 12px;
+ line-height: 40px;
+ color: black;
+
+}
+
+.C-content2 p
+{
+ margin-top: 15px; 
+}
+
+.C-retangulo3
+{
+
+ text-align: center;
+
+}
+
+.C-retangulo2 a
+{
+ text-decoration: none;
+ color: #2686CC;
+
+}
+.C-retangulo3 h2
+{
+
+ font-family: "Segoe UI";
+ font-style: normal;
+ font-weight: normal;
+ width: 342px;
+ font-size: 12px;
+ line-height: 16px;
+ padding: 28px 0;
+
+}
+
+
+.C-form_cadastro button 
+{
+
+ width: 267px;
+ height: 30px;
+ left: 826px;
+ top: 485px; 
+ background: #2686CC;
+ border-radius: 2px;
+ border: 1px solid #DCDCDC;
+ box-sizing: border-box;
+ color: white;
+ 
+}
+
+.C-form_cadastro input
+{
+ margin-bottom: 9px;
+ width: 267px;
+ height: 35px;
+ left: 826px;
+ top: 344px;
+ background: #FAFAFA;
+ border: 1px solid #DCDCDC;
+ box-sizing: border-box;
+ border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+
+

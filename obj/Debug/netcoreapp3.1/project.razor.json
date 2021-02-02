@@ -14392,6 +14392,16 @@
   "RootNamespace": "InstaDev_s",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\JoViO\\OneDrive\\Documentos\\GitHub\\InstaDev-s\\Views\\EdicaoDePerfil\\Index.cshtml",
+      "TargetPath": "Views\\EdicaoDePerfil\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JoViO\\OneDrive\\Documentos\\GitHub\\InstaDev-s\\Views\\Usuario\\Index.cshtml",
+      "TargetPath": "Views\\Usuario\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\JoViO\\OneDrive\\Documentos\\GitHub\\InstaDev-s\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -14402,8 +14412,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\JoViO\\OneDrive\\Documentos\\GitHub\\InstaDev-s\\Views\\Login\\Index.cshtml",
+      "TargetPath": "Views\\Login\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\JoViO\\OneDrive\\Documentos\\GitHub\\InstaDev-s\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JoViO\\OneDrive\\Documentos\\GitHub\\InstaDev-s\\Views\\Usuario\\Perfil.cshtml",
+      "TargetPath": "Views\\Usuario\\Perfil.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14412,8 +14432,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\JoViO\\OneDrive\\Documentos\\GitHub\\InstaDev-s\\Views\\Perfil\\Index.cshtml",
-      "TargetPath": "Views\\Perfil\\Index.cshtml",
+      "FilePath": "c:\\Users\\JoViO\\OneDrive\\Documentos\\GitHub\\InstaDev-s\\Views\\Feed\\Index.cshtml",
+      "TargetPath": "Views\\Feed\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],
