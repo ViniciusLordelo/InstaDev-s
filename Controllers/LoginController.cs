@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using InstaDev_s.Models;
 using Microsoft.AspNetCore.Http;
@@ -26,6 +27,8 @@ namespace InstaDev_s.Controllers
             {
                 HttpContext.Session.SetString("IdLogado", logado.Split(";")[0]);
                 ViewBag.logado = HttpContext.Session.GetString("IdLogado");
+                Console.WriteLine("estou logado");
+                Console.WriteLine(HttpContext.Session.GetString("IdLogado"));
                 return LocalRedirect("~/");
             }
 
@@ -46,9 +49,9 @@ namespace InstaDev_s.Controllers
         [Route("Usuario/Perfil")]
         public IActionResult Perfil()
         {
-            // ViewBag.logado = HttpContext.Session.GetString("IdLogado");
             Usuario usuario = new Usuario();
-            ViewBag.Infos = usuario.MostrarInformacoes(ViewBag.logado);
+            ViewBag.Infos = usuario.MostrarInformacoes(HttpContext.Session.GetString("IdLogado"));
+
             return View();
 
         }
