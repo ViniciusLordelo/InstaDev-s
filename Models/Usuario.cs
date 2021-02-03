@@ -16,7 +16,7 @@ namespace InstaDev_s.Models
 
         public string Foto { get; set; }
 
-        public DateTime DataNascimento { get; set; }
+        public DateTime DataNascimento = new DateTime();
 
         public int Seguidos { get; set; }
 
@@ -29,7 +29,7 @@ namespace InstaDev_s.Models
         public string Mensagem { get; set; }        
         
 
-        private const string PATH = "Database/Usuarios.csv";
+        public const string PATH = "Database/Usuarios.csv";
 
         public Usuario(){
             CreateFolderAndFile(PATH);
@@ -109,22 +109,22 @@ namespace InstaDev_s.Models
             //Procurando o user pelo Id
             List<string> csv = ReadAllLinesCSV("Database/Usuarios.csv");
 
-            var info =
-            csv.Find(
-                x =>
-                x.Split(";")[0] == Id
-            );
+                var info =
+                csv.Find(
+                    x =>
+                    x.Split(";")[0] == Id
+                );
 
-            if (info != null)
-            {
-                Usuario usuario = new Usuario();
-                usuario.Foto = csv.Find(x => x.Split(";")[1] == Foto);
-                usuario.Nome = csv.Find(x => x.Split(";")[3] == Nome);
-                usuario.Username = csv.Find(x => x.Split(";")[5] == Username);
+                if (info != null)
+                {
+                    Usuario usuario = new Usuario();
+                    usuario.Foto = csv.Find(x => x.Split(";")[1] == Foto);
+                    usuario.Nome = csv.Find(x => x.Split(";")[3] == Nome);
+                    usuario.Username = csv.Find(x => x.Split(";")[5] == Username);
 
-                infoUser.Add(usuario);
-                return infoUser;
-            }
+                    infoUser.Add(usuario);
+                    return infoUser;
+                }
 
                 return infoUser;
 

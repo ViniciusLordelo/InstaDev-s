@@ -13,7 +13,7 @@ namespace InstaDev_s.Controllers
         public const string PATH = "Database/Usuarios.csv";
         public IActionResult Logar(IFormCollection form)
         {
-            List<string> csv = usuarioModel.ReadAllLinesCSV("Database/Usuarios.csv");
+            List<string> csv = usuarioModel.ReadAllLinesCSV(PATH);
 
             var logado =
             csv.Find(
