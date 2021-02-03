@@ -30,7 +30,7 @@ namespace InstaDev_s.Controllers
             novoUsuario.Username = form["Username"];
             novoUsuario.Email = form["Email"];
             novoUsuario.Senha = form["Senha"];
-            // novoUsuario.DataNascimento = form["Data de Nascimento"];
+            novoUsuario.DataNascimento = DateTime.Parse(form["DataNascimento"]);
             novoUsuario.Foto = form["Foto"];
             
             if (form.Files.Count > 0)
