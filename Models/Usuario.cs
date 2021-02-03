@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using InstaDev_s.Controllers;
 using Microsoft.AspNetCore.Http;
 
 
@@ -17,7 +18,7 @@ namespace InstaDev_s.Models
 
         public DateTime DataNascimento { get; set; }
 
-        public int[] Seguidos { get; set; }
+        public int Seguidos { get; set; }
 
         public string Email { get; set; }
 
@@ -25,9 +26,7 @@ namespace InstaDev_s.Models
 
         public string Senha { get; set; }
 
-        public string Mensagem { get; set; }
-
-        
+        public string Mensagem { get; set; }        
         
 
         private const string PATH = "Database/Usuarios.csv";
@@ -41,6 +40,9 @@ namespace InstaDev_s.Models
         public void CadastrarUsuario(Usuario u){
             string[] linhas = {Prepare(u)};
             File.AppendAllLines(PATH, linhas);
+        }
+        public void MostrarLogado(Usuario u){
+            
         }
         public List<Usuario> MostrarUsuario(){ //Perfil
             List<Usuario> usuarios = new List<Usuario>();
@@ -56,8 +58,7 @@ namespace InstaDev_s.Models
                 novoUsuario.Email = linha[4];
                 novoUsuario.Username = linha[5];
                 novoUsuario.Senha = linha[6];
-                // novoUsuario.Seguidos = Int32[].Parse(linha[7]);
-
+                // novoUsuario.Seguidos = int.Parse(linha[7]);
             }
             return usuarios;
         }   
@@ -91,29 +92,6 @@ namespace InstaDev_s.Models
 
         }
 
-        // public void Logar(IFormCollection form){
-        //     List<string> csv = ReadAllLinesCSV("Database/Usuarios.csv");
-
-        //     var logado =
-        //     csv.Find(
-        //         x =>
-        //         x.Split(";")[4] == form ["Email"] || x.Split(";")[5] == form ["Username"] &&
-        //         x.Split(";")[6] == form ["Senha"]
-        //     );
-
-        //     if(logado != null)
-        //     {
-        //         HttpContext.Session.SetString("_UserName", logado.Split(";")[1]);
-        //         return LocalRedirect("~/");
-        //     }
-
-        //     Mensagem = "Dados incorretos, tente novamente...";
-        //     return LocalRedirect("~/Login");
-
-
-
-
-        // }
 
         public void Seguir(){
 
@@ -121,6 +99,40 @@ namespace InstaDev_s.Models
             
         }
 
+        // public List<Usuario> MostrarInformacoes(){
+        //     LoginController login = new LoginController();
+        //     List<Usuario> infoUsuario = new List<Usuario>();
+        //     Usuario usuarioLogado = new Usuario();
+
+        //     string logado = login.UsuariosLogados();
+
+        //     List<string> csv = ReadAllLinesCSV("Database/Usuarios.csv");
+
+        //     csv.Find( 
+        //         x =>
+        //         x.Split(";")[0] == logado 
+        //     );
+
+        //     if (logado != null)
+        //     {
+        //         foreach (string item in csv)
+        //         {
+
+        //             string[] linha = item.Split(";");
+
+        //             usuarioLogado.Foto = linha[1];
+        //             usuarioLogado.Nome = linha[3];
+        //             usuarioLogado.Username = linha[5];
+        //             usuarioLogado.Seguidos = int.Parse(linha [7]);
+
+        //             infoUsuario.Add(usuarioLogado);
+        //         }
+
+        //     }
+            
+        //     return infoUsuario;
+
+        // }
 
         
         

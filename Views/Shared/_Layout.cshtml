@@ -11,24 +11,26 @@
 </head>
 <body >
 
-    
-    <header class="P-header">
-        <div class="P-content P-flex-center-bt">
-            <a href=""><img src="~/imgPerfil/Logo.svg" alt=""></a>
-            <form class="P-pesquisa" action="">
-                <input class="P-input"  placeholder="Pesquisar" type="text">
-            </form>
-            <nav>
-                <ul class="P-links P-flex-center-bt">
-                    <li><a href=""><img src="~/imgPerfil/Casa.svg" alt=""></a></li>
-                    <li><a href=""><img src="~/imgPerfil/Aviao.svg" alt=""></a></li>
-                    <li><a href=""><img src="~/imgPerfil/Compasso.svg" alt=""></a></li>
-                    <li><a href=""><img src="~/imgPerfil/Coracao.svg" alt=""></a></li>
-                    <li><a href=""><img src="~/imgPerfil/User.svg" alt=""></a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>  
+    @if (ViewBag.logado != null)
+    {
+        <header class="P-header">
+            <div class="P-content P-flex-center-bt">
+                <a href=""><img src="~/imgPerfil/Logo.svg" alt=""></a>
+                <form class="P-pesquisa" action="">
+                    <input class="P-input"  placeholder="Pesquisar" type="text">
+                </form>
+                <nav>
+                    <ul class="P-links P-flex-center-bt">
+                        <li><a href=""><img src="~/imgPerfil/Casa.svg" alt=""></a></li>
+                        <li><a href=""><img src="~/imgPerfil/Aviao.svg" alt=""></a></li>
+                        <li><a href=""><img src="~/imgPerfil/Compasso.svg" alt=""></a></li>
+                        <li><a href=""><img src="~/imgPerfil/Coracao.svg" alt=""></a></li>
+                        <li><a href=""><img src="~/imgPerfil/User.svg" alt=""></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>  
+    }
         
 
 
