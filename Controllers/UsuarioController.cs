@@ -12,7 +12,7 @@ namespace InstaDev_s.Controllers
 
         Usuario usuarioModel = new Usuario();
 
-        [Route ("MostrarUsuario")]
+        [Route ("Cadastro")]
         public IActionResult Index()
         {
             return View();
@@ -20,7 +20,7 @@ namespace InstaDev_s.Controllers
 
         
 
-        [Route ("Cadastrar Usuario")]
+        [Route ("Cadastrar_Usuario")]
         public IActionResult CadastrarUsuario (IFormCollection form)
         {
             Usuario novoUsuario = new Usuario();
@@ -30,7 +30,7 @@ namespace InstaDev_s.Controllers
             novoUsuario.Username = form["Username"];
             novoUsuario.Email = form["Email"];
             novoUsuario.Senha = form["Senha"];
-            // novoUsuario.DataNascimento = DateTime.Parse(form["Data de Nascimento"]);
+            novoUsuario.DataNascimento = DateTime.Parse(form["Data de Nascimento"]);
             novoUsuario.Foto = form["Foto"];
             
             if (form.Files.Count > 0)
@@ -59,14 +59,14 @@ namespace InstaDev_s.Controllers
             if(novoUsuario.Nome != null && novoUsuario.Email != null && novoUsuario.Senha != null && novoUsuario.Username != null)
             {
                 usuarioModel.CadastrarUsuario(novoUsuario);
-                ViewBag.Usuario = usuarioModel.MostrarUsuario();
+                ViewBag.Usuario = usuarioModel.Cadastro();
             }else{
                 usuarioModel.Mensagem = "Preencha todos os campos!";
             }
 
 
 
-            return LocalRedirect("~/Usuario/MostrarUsuario");
+            return LocalRedirect("~/Usuario/Cadastro");
 
             
 
