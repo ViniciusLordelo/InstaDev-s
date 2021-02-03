@@ -10,29 +10,27 @@
     <link rel="stylesheet" href="~/css/EdicaoDePerfil.css" />
 </head>
 <body>
-
     @if (ViewBag.logado != null)
     {
-        
-    
-     <header>
-        <div class="content flex-center-bt">
-            <a href=""><img src="imgPerfil/Logo.svg" alt=""></a>
-            <form class="pesquisa" action="">
-                <input class="input"  placeholder="Pesquisar" type="text">
-            </form>
-            <nav>
-                <ul class="links flex-center-bt">
-                    <li><a asp-area="" asp-action="Index" asp-controller="Usuario">Cadastrar</a></li>
-                    <li><a href=""><img src="imgPerfil/Casa.svg" alt=""></a></li>
-                    <li><a href=""><img src="imgPerfil/Aviao.svg" alt=""></a></li>
-                    <li><a href=""><img src="imgPerfil/Compasso.svg" alt=""></a></li>
-                    <li><a href=""><img src="imgPerfil/Coracao.svg" alt=""></a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>  
+        <header>
+            <div class="content flex-center-bt">
+                <a href=""><img src="imgPerfil/Logo.svg" alt=""></a>
+                <form class="pesquisa" action="">
+                    <input class="input"  placeholder="Pesquisar" type="text">
+                </form>
+                <nav>
+                    <ul class="links flex-center-bt">
+                        <li><a asp-area="" asp-action="Index" asp-controller="Usuario">Cadastrar</a></li>
+                        <li><a href=""><img src="imgPerfil/Casa.svg" alt=""></a></li>
+                        <li><a href=""><img src="imgPerfil/Aviao.svg" alt=""></a></li>
+                        <li><a href=""><img src="imgPerfil/Compasso.svg" alt=""></a></li>
+                        <li><a href=""><img src="imgPerfil/Coracao.svg" alt=""></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header> 
     }
+        
 
 
     <div class="container">

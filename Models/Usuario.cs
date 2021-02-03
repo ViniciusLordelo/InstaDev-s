@@ -15,7 +15,7 @@ namespace InstaDev_s.Models
 
         public string Foto { get; set; }
 
-        public DateTime DataNascimento { get; set; }
+        public DateTime DataNascimento = new DateTime();
 
         public int[] Seguidos { get; set; }
 
@@ -25,9 +25,7 @@ namespace InstaDev_s.Models
 
         public string Senha { get; set; }
 
-        public string Mensagem { get; set; }
-
-        
+        public string Mensagem { get; set; }        
         
 
         private const string PATH = "Database/Usuarios.csv";
@@ -91,34 +89,14 @@ namespace InstaDev_s.Models
 
         }
 
-        // public void Logar(IFormCollection form){
-        //     List<string> csv = ReadAllLinesCSV("Database/Usuarios.csv");
-
-        //     var logado =
-        //     csv.Find(
-        //         x =>
-        //         x.Split(";")[4] == form ["Email"] || x.Split(";")[5] == form ["Username"] &&
-        //         x.Split(";")[6] == form ["Senha"]
-        //     );
-
-        //     if(logado != null)
-        //     {
-        //         HttpContext.Session.SetString("_UserName", logado.Split(";")[1]);
-        //         return LocalRedirect("~/");
-        //     }
-
-        //     Mensagem = "Dados incorretos, tente novamente...";
-        //     return LocalRedirect("~/Login");
-
-
-
-
-        // }
 
         public void Seguir(){
 
 
             
+        }
+
+        public void MostrarInformacoes(String logado){
         }
 
         
