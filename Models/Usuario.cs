@@ -69,7 +69,7 @@ namespace InstaDev_s.Models
             linhas.RemoveAll(x => x.Split(";")[5] == u.Username);
             linhas.RemoveAll(x => x.Split(";")[4] == u.Email);
             linhas.RemoveAll(x => x.Split(";")[3] == u.Nome);
-            linhas.RemoveAll(x => x.Split(";")[1] == u.Foto);
+            // linhas.RemoveAll(x => x.Split(";")[1] == u.Foto);
 
             linhas.Add(Prepare(u));
 
@@ -99,44 +99,45 @@ namespace InstaDev_s.Models
             
         }
 
-        // public List<Usuario> MostrarInformacoes(){
-        //     LoginController login = new LoginController();
-        //     List<Usuario> infoUsuario = new List<Usuario>();
-        //     Usuario usuarioLogado = new Usuario();
+        public List<Usuario> MostrarInformacoes(string Id){
 
-        //     string logado = login.UsuariosLogados();
+            List<Usuario> infoUser = new List<Usuario>();
 
-        //     List<string> csv = ReadAllLinesCSV("Database/Usuarios.csv");
 
-        //     csv.Find( 
-        //         x =>
-        //         x.Split(";")[0] == logado 
-        //     );
 
-        //     if (logado != null)
-        //     {
-        //         foreach (string item in csv)
-        //         {
-
-        //             string[] linha = item.Split(";");
-
-        //             usuarioLogado.Foto = linha[1];
-        //             usuarioLogado.Nome = linha[3];
-        //             usuarioLogado.Username = linha[5];
-        //             usuarioLogado.Seguidos = int.Parse(linha [7]);
-
-        //             infoUsuario.Add(usuarioLogado);
-        //         }
-
-        //     }
             
-        //     return infoUsuario;
+            //Procurando o user pelo Id
+            List<string> csv = ReadAllLinesCSV("Database/Usuarios.csv");
 
-        // }
+            var info =
+            csv.Find(
+                x =>
+                x.Split(";")[0] == Id
+            );
+
+            if (info != null)
+            {
+                Usuario usuario = new Usuario();
+                usuario.Foto = csv.Find(x => x.Split(";")[1] == Foto);
+                usuario.Nome = csv.Find(x => x.Split(";")[3] == Nome);
+                usuario.Username = csv.Find(x => x.Split(";")[5] == Username);
+
+                infoUser.Add(usuario);
+                return infoUser;
+            }
+
+                return infoUser;
+
+            
+
+        }
+
+
+    
 
         
         
         
-        
-    }
+    }      
+    
 }

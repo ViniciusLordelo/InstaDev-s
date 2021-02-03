@@ -33,43 +33,24 @@ namespace InstaDev_s.Controllers
             return LocalRedirect("~/Login");
         }
 
-        public string UsuariosLogados(){
+        // public IActionResult Info()
+        // {
+        //     ViewBag.logado = HttpContext.Session.GetString("IdLogado");
+        //     Usuario usuario = new Usuario();
 
-            string IdLogado = ViewBag.logado;
+        //     ViewBag.Infos = usuario.MostrarInformacoes(ViewBag.logado);
 
-            Usuario u =new Usuario();
+        //     return ViewBag.Infos;
+        // }
 
+        [Route("Usuario/Perfil")]
+        public IActionResult Perfil()
+        {
+            // ViewBag.logado = HttpContext.Session.GetString("IdLogado");
+            Usuario usuario = new Usuario();
+            ViewBag.Infos = usuario.MostrarInformacoes(ViewBag.logado);
+            return View();
 
-            List<string> csv = usuarioModel.ReadAllLinesCSV("Database/Usuarios.csv");
-
-            csv.Find( 
-                x =>
-                x.Split(";")[0] == IdLogado
-            );
-
-            if (IdLogado != null)
-            {
-                foreach (string item in csv)
-                {
-
-                    string[] linha = item.Split(";");
-
-                    u.Foto = linha[1];
-                    u.Nome = linha[3];
-                    u.Username = linha[5];
-                    u.Seguidos = int.Parse(linha [7]);
-
-                }
-
-            }
-                    ViewBag.Nome = u.Nome;
-                    ViewBag.Username = u.Username;
-                    ViewBag.Foto = u.Foto;
-                    ViewBag.Seguidos = u.Seguidos;
-            
-            return ViewBag;
-
-        
         }
 
 

@@ -14422,8 +14422,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\JoViO\\OneDrive\\Documentos\\GitHub\\InstaDev-s\\Views\\Usuario\\Perfil.cshtml",
-      "TargetPath": "Views\\Usuario\\Perfil.cshtml",
+      "FilePath": "c:\\Users\\JoViO\\OneDrive\\Documentos\\GitHub\\InstaDev-s\\Views\\Login\\Perfil.cshtml",
+      "TargetPath": "Views\\Login\\Perfil.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -10,9 +10,14 @@
                     <img src="~/imgPerfil/User.svg" alt="">
                 </div>
                 <div class="P-info-user">
-                        <div class="P-nome"><span>@ViewBag.Username</span></div>
+                    @foreach (Usuario usuario in ViewBag.Infos)
+                    {
+                        
+                        <div class="P-nome"><span>@usuario.Username</span></div>
                         <div class="P-num"><span>3 publicações</span> <span>128 seguindo</span> <span>214 seguidores</span></div>
-                        <div class="P-sair"><span>@ViewBag.Nome</span> <button>Sair</button></div>                        
+                        <div class="P-sair"><span>@usuario.Nome</span> <button>Sair</button></div>                        
+            
+                    }
                 </div>
             </section>
 
