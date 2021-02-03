@@ -42,25 +42,25 @@ namespace InstaDev_s.Models
             string[] linhas = {Prepare(u)};
             File.AppendAllLines(PATH, linhas);
         }
-        public List<Usuario> Cadastro(){ //Perfil
-            List<Usuario> usuarios = new List<Usuario>();
-            string[] linhas = File.ReadAllLines(PATH);
-            foreach (var item in linhas)
-            {
-                string[] linha = item.Split(";");
-                Usuario novoUsuario = new Usuario();
-                novoUsuario.IdUsuario = Guid.Parse(linha[0]);
-                novoUsuario.Foto = linha[1];
-                novoUsuario.DataNascimento = DateTime.Parse(linha[2]);
-                novoUsuario.Nome = linha[3];
-                novoUsuario.Email = linha[4];
-                novoUsuario.Username = linha[5];
-                novoUsuario.Senha = linha[6];
-                // novoUsuario.Seguidos = Int32[].Parse(linha[7]);
+        // public List<Usuario> Cadastro(){ //Perfil
+        //     List<Usuario> usuarios = new List<Usuario>();
+        //     string[] linhas = File.ReadAllLines(PATH);
+        //     foreach (var item in linhas)
+        //     {
+        //         string[] linha = item.Split(";");
+        //         Usuario novoUsuario = new Usuario();
+        //         novoUsuario.IdUsuario = Guid.Parse(linha[0]);
+        //         novoUsuario.Foto = linha[1];
+        //         novoUsuario.DataNascimento = DateTime.Parse(linha[2]);
+        //         novoUsuario.Nome = linha[3];
+        //         novoUsuario.Email = linha[4];
+        //         novoUsuario.Username = linha[5];
+        //         novoUsuario.Senha = linha[6];
+        //         // novoUsuario.Seguidos = Int32[].Parse(linha[7]);
 
-            }
-            return usuarios;
-        }   
+        //     }
+        //     return usuarios;
+        // }   
 
         public void EditarUsuario(Usuario u){
             List<string> linhas  = ReadAllLinesCSV(PATH);
