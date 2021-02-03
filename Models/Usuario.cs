@@ -15,7 +15,7 @@ namespace InstaDev_s.Models
 
         public string Foto { get; set; }
 
-        public DateTime DataNascimento { get; set; }
+        public DateTime DataNascimento = new DateTime();
 
         public int[] Seguidos { get; set; }
 
@@ -25,9 +25,7 @@ namespace InstaDev_s.Models
 
         public string Senha { get; set; }
 
-        public string Mensagem { get; set; }
-
-        
+        public string Mensagem { get; set; }        
         
 
         private const string PATH = "Database/Usuarios.csv";
@@ -51,13 +49,12 @@ namespace InstaDev_s.Models
                 Usuario novoUsuario = new Usuario();
                 novoUsuario.IdUsuario = Guid.Parse(linha[0]);
                 novoUsuario.Foto = linha[1];
-                novoUsuario.DataNascimento = DateTime.Parse(linha[2]);
+                novoUsuario.DataNascimento = System.DateTime.Parse(linha[2]);
                 novoUsuario.Nome = linha[3];
                 novoUsuario.Email = linha[4];
                 novoUsuario.Username = linha[5];
                 novoUsuario.Senha = linha[6];
                 // novoUsuario.Seguidos = Int32[].Parse(linha[7]);
-
             }
             return usuarios;
         }   
@@ -91,34 +88,14 @@ namespace InstaDev_s.Models
 
         }
 
-        // public void Logar(IFormCollection form){
-        //     List<string> csv = ReadAllLinesCSV("Database/Usuarios.csv");
-
-        //     var logado =
-        //     csv.Find(
-        //         x =>
-        //         x.Split(";")[4] == form ["Email"] || x.Split(";")[5] == form ["Username"] &&
-        //         x.Split(";")[6] == form ["Senha"]
-        //     );
-
-        //     if(logado != null)
-        //     {
-        //         HttpContext.Session.SetString("_UserName", logado.Split(";")[1]);
-        //         return LocalRedirect("~/");
-        //     }
-
-        //     Mensagem = "Dados incorretos, tente novamente...";
-        //     return LocalRedirect("~/Login");
-
-
-
-
-        // }
 
         public void Seguir(){
 
 
             
+        }
+
+        public void MostrarInformacoes(String logado){
         }
 
         
