@@ -4,19 +4,42 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - InstaDev_s</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/perfil.css">
     <link rel="stylesheet" href="~/css/cadastro.css" />
+    <link rel="stylesheet" href="~/css/LoginStyle.css" />
+    <link rel="stylesheet" href="~/css/EdicaoDePerfil.css" />
 </head>
 <body>
-    <header>
+
+    @if (ViewBag.logado != null)
+    {
         
-    </header>
+    
+     <header>
+        <div class="content flex-center-bt">
+            <a href=""><img src="imgPerfil/Logo.svg" alt=""></a>
+            <form class="pesquisa" action="">
+                <input class="input"  placeholder="Pesquisar" type="text">
+            </form>
+            <nav>
+                <ul class="links flex-center-bt">
+                    <li><a asp-area="" asp-action="Index" asp-controller="Usuario">Cadastrar</a></li>
+                    <li><a href=""><img src="imgPerfil/Casa.svg" alt=""></a></li>
+                    <li><a href=""><img src="imgPerfil/Aviao.svg" alt=""></a></li>
+                    <li><a href=""><img src="imgPerfil/Compasso.svg" alt=""></a></li>
+                    <li><a href=""><img src="imgPerfil/Coracao.svg" alt=""></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>  
+    }
+
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
