@@ -40,7 +40,7 @@ namespace InstaDev_s.Models
             string[] linhas = {Prepare(u)};
             File.AppendAllLines(PATH, linhas);
         }
-        public List<Usuario> Cadastro(){ //Perfil
+        public List<Usuario> MostrarUsuario(){ //Perfil
             List<Usuario> usuarios = new List<Usuario>();
             string[] linhas = File.ReadAllLines(PATH);
             foreach (var item in linhas)
@@ -49,7 +49,7 @@ namespace InstaDev_s.Models
                 Usuario novoUsuario = new Usuario();
                 novoUsuario.IdUsuario = Guid.Parse(linha[0]);
                 novoUsuario.Foto = linha[1];
-                novoUsuario.DataNascimento = System.DateTime.Parse(linha[2]);
+                // novoUsuario.DataNascimento = System.DateTime.Parse(linha[2]);
                 novoUsuario.Nome = linha[3];
                 novoUsuario.Email = linha[4];
                 novoUsuario.Username = linha[5];
@@ -94,10 +94,6 @@ namespace InstaDev_s.Models
 
             
         }
-
-        public void MostrarInformacoes(String logado){
-        }
-
         
         
         
