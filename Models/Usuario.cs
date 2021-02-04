@@ -72,14 +72,13 @@ namespace InstaDev_s.Models
 
         }
 
-        public void DeletarUsuario(string userName){
+        public void DeletarUsuario(int id){
 
             List<string> linhas = ReadAllLinesCSV(PATH);
 
-            linhas.RemoveAll(x => x.Split(";")[0] == userName.ToString());
+            linhas.RemoveAll(x => x.Split(";")[0] == IdUsuario.ToString());
             
             RewriteCSV(PATH, linhas);
-
 
         } 
 
@@ -110,6 +109,7 @@ namespace InstaDev_s.Models
 
 
         // }
+
 
         public void Seguir(){
 

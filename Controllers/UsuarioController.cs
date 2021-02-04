@@ -68,16 +68,7 @@ namespace InstaDev_s.Controllers
 
             return LocalRedirect("~/Usuario/MostrarUsuario");
 
-            
-
-
         }
-
-        // public IActionResult Editar()
-        // {
-        //     usuarioModel.EditarUsuario (Username);
-        //     return LocalRedirect("~/Usuario");
-        // }
 
         [Route ("EdicaoDePerfil")]
         public IActionResult Edicao(IFormCollection form)
@@ -91,6 +82,21 @@ namespace InstaDev_s.Controllers
             usuarioModel.EditarUsuario(usuario);
             return View();
         }
+        [Route ("EditarFoto")]
+        public IActionResult EditarFoto (string foto)
+        // string foto -> iStock-648229868-1024x909.png
+        {
+            Usuario usuario = new Usuario();
+            
+            usuario.Foto = "foto";
 
+            usuarioModel.EditarUsuario(usuario);
+            return View();
+        }
+        public IActionResult Excluir(int id)
+        {
+            usuarioModel.DeletarUsuario(id);
+            return LocalRedirect("~/Login/Index");
+        }
     }
 }

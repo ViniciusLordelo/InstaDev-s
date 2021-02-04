@@ -5,19 +5,31 @@
     box-sizing: border-box
 }
 
-header {
+header
+{
     width: 100%;
     height: 50px;
-    border: 1px solid #F1F1F1
+    border: 1px solid #F1F1F1;
+    background-color: white;
 }
 
-.flex-center-bt {
+.content
+{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    
+}
+
+.flex-center-bt
+{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.pesquisa {
+.pesquisa
+{
     width: 215px;
     height: 28px;
     border: 1px solid #DCDCDC;
@@ -26,21 +38,34 @@ header {
     margin-left: 100px;
 }
 
-.pesquisa input {
+.input
+{
     width: 100%;
     height: 100%;
-    font-family: 'Segoe UI', Tahoma, "Geneva", Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     text-align: center;
-    background-image: url("../img/Lupa.svg");
-    background-repeat: no-repeat;
     background-position: 105px;
     background: #FAFAFA;
 }
-.links {
-    list-style-type: none;
-    width: 200px;
+
+.input::placeholder
+{
+    background-image: url("../img/Lupa.svg");
+    background-repeat: no-repeat;
+    background-position-x: 64px;
+    background-position-y: 4px;
+    background-size: 10px;
+    color: rgba(175, 175, 175, 1); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.links
+{
+    list-style-type: none;
+    width: 220px;
+}
 /* Fim do Header */
 /* Começo do Main */
 .E-contain {
@@ -106,6 +131,14 @@ header {
 }
 .E-alterar {
     margin-left: 17px;
+}
+.E-alterar a {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #2686CC;
 }
 .E-info-user h2 {
     font-family: Segoe UI;
@@ -277,11 +310,7 @@ header {
     font-size: 12px;
     line-height: 16px;
 }
-.E-botao {
-    padding-top: 40px;
-    margin-left: 30px;
-}
-.E-botao a {
+.E-Botao a {
     text-decoration: none;
     font-family: "Segoe UI";
     font-style: normal;
@@ -291,9 +320,3 @@ header {
     color: #2686CC;
     margin-left: 50px;
 }
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-/* Fim do Main */

@@ -4,10 +4,30 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - InstaDev_s</title>
-    <link rel="stylesheet" href="~/css/perfil.css">
+    @switch (ViewData["Title"])
+    {
+        case "Login":
+            <link rel="stylesheet" href="~/css/LoginStyle.css" />
+            break;
+        
+        case "Feed":
+            break;
+
+        case "Edição de Perfil":
+            <link rel="stylesheet" href="~/css/EdicaoDePerfil.css" />
+            break;
+
+        case "Cadastrar Usuario":
     <link rel="stylesheet" href="~/css/cadastro.css" />
-    <link rel="stylesheet" href="~/css/LoginStyle.css" />
-    <link rel="stylesheet" href="~/css/EdicaoDePerfil.css" />
+            break;
+
+        case "Perfil":
+    <link rel="stylesheet" href="~/css/perfil.css">
+        break;
+        default:
+            break;
+    }
+    
 </head>
      <header>
         <div class="content flex-center-bt">
@@ -22,6 +42,7 @@
                     <li><a href=""><img src="~/imgPerfil/Aviao.svg" alt=""></a></li>
                     <li><a href=""><img src="~/imgPerfil/Compasso.svg" alt=""></a></li>
                     <li><a href=""><img src="~/imgPerfil/Coracao.svg" alt=""></a></li>
+                    <li><a href=""><img src="~/imgPerfil/User.svg" alt=""></a></li>
                 </ul>
             </nav>
         </div>

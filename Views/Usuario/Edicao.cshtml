@@ -1,6 +1,6 @@
 ﻿@model Usuario
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Edição de Perfil";
 }
 <body>
 <div class="E-contain">
@@ -14,12 +14,12 @@
                 <form method="POST" action='@Url.Action("Edicao")' enctype="multipart/form-data">
                 <div class="E-foto-user">
                     <div>
-                        <img src="~/imgEdicaoDePerfil/User.svg" alt="Sua imagem de perfil"></img>
+                        @* <img src="~/wwwroot/img/icon/@IdUsuario.Foto" alt="Sua imagem de perfil"></img> *@
                     </div>
                     <div class="E-info-user">
                         <h2>yes_baby</h2>
                         <div class="E-alterar">
-                            <h3>Alterar foto de perfil</h3>
+                            <a asp-controller="Usuario" asp-action="EditarFoto">Alterar foto de perfil</a>
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                         <Label>Nome de perfil</Label>
                     </div>
                     <div class="E-imputusuario1">
-                        <input class="E-imputusuario" value="Yes_baby" type="text" name="Usuario"></input>
+                        <input class="E-imputusuario" value="Yes_baby" type="text" name="Username"></input>
                         <p class="E-texto2">Na maioria dos casos, você poderá alterar seu nome de usuário <br>
                             novamente para
                             nascimento_tr por mais 14 dias.</p>
@@ -56,9 +56,9 @@
                 <div class="E-editemail1">
                     <Label>Email</Label>
                 </div>
-                <div class="E-botao">
+                <div class="E-Botao">
                     <input class="E-imputemail" value="yes_baby@email.com" type="text" name="Email"></imput>
-                    <button type="submit">Enviar</button> <a>Desativar minha conta definitivamente</a>
+                    <button class="button1" type="submit">Enviar</button> <a asp-action="Excluir" asp-controller="Usuario" asp-area="">Desativar minha conta definitivamente</a>
                     </form>
                 </div>
             </div>
