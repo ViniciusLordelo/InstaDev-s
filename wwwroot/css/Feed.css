@@ -84,16 +84,20 @@ header
 
 main 
 {
-    display: flex;
+    height: 100vh;
+    /* display: flex; */
 }
 .F-alinhar
 {
     padding-top:24px ;
+    display: flex;
+    flex-direction: column;
 }
 
 .F-conteiner
 {
     display: flex;
+    flex-direction: none;
 }
 .F-storyes
 {
