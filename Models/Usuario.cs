@@ -34,34 +34,15 @@ namespace InstaDev_s.Models
         public Usuario(){
             CreateFolderAndFile(PATH);
         }
-        public string Prepare(Usuario u){
-            return $"{u.IdUsuario};{u.Foto};{u.DataNascimento};{u.Nome};{u.Email};{u.Username};{u.Senha};{u.Seguidos}";
-        }
         public void CadastrarUsuario(Usuario u){
             string[] linhas = {Prepare(u)};
             File.AppendAllLines(PATH, linhas);
         }
-        public void MostrarLogado(Usuario u){
-            
+        public string Prepare(Usuario u){
+            return $"{u.IdUsuario};{u.Foto};{u.DataNascimento};{u.Nome};{u.Email};{u.Username};{u.Senha};{u.Seguidos}";
         }
-        public List<Usuario> MostrarUsuario(){ //Perfil
-            List<Usuario> usuarios = new List<Usuario>();
-            string[] linhas = File.ReadAllLines(PATH);
-            foreach (var item in linhas)
-            {
-                string[] linha = item.Split(";");
-                Usuario novoUsuario = new Usuario();
-                novoUsuario.IdUsuario = Guid.Parse(linha[0]);
-                novoUsuario.Foto = linha[1];
-                novoUsuario.DataNascimento = DateTime.Parse(linha[2]);
-                novoUsuario.Nome = linha[3];
-                novoUsuario.Email = linha[4];
-                novoUsuario.Username = linha[5];
-                novoUsuario.Senha = linha[6];
-                // novoUsuario.Seguidos = int.Parse(linha[7]);
-            }
-            return usuarios;
-        }   
+        // public List<Usuario> MostrarUsuario(){ //Perfil
+        // }   
 
         public void EditarUsuario(Usuario u){
             List<string> linhas  = ReadAllLinesCSV(PATH);
@@ -88,8 +69,25 @@ namespace InstaDev_s.Models
 
         } 
 
-        public void ListarUsuario(){ //Stories
+        public List<Usuario> ListarUsuario(){ //Stories
 
+            List<Usuario> usuarios = new List<Usuario>();
+            string[] linhas = File.ReadAllLines(PATH);
+            foreach (var item in linhas)
+            {
+                string[] linha = item.Split(";");
+                Usuario novoUsuario = new Usuario();
+                novoUsuario.IdUsuario = Guid.Parse(linha[0]);
+                novoUsuario.Foto = linha[1];
+                novoUsuario.DataNascimento = DateTime.Parse(linha[2]);
+                novoUsuario.Nome = linha[3];
+                novoUsuario.Email = linha[4];
+                novoUsuario.Username = linha[5];
+                novoUsuario.Senha = linha[6];
+                // novoUsuario.Seguidos = Int32[].Parse(linha[7]);
+
+            }
+            return usuarios;
         }
 
 
@@ -103,9 +101,6 @@ namespace InstaDev_s.Models
 
             List<Usuario> infoUser = new List<Usuario>();
 
-
-
-            
             //Procurando o user pelo Id
             List<string> csv = ReadAllLinesCSV("Database/Usuarios.csv");
 
