@@ -8,13 +8,13 @@
                 <section class="F-storyes ">
                         <nav>
                             <ul>
-                                <li><a href="#"><div><img src="~/imgFeed/vin-diesel 1.png" alt="imagem de perfil de vin diesel brasileiro"><p>vin_diesel</p></div></a></li>
-                                <li><a href="#"><div><img src="~/imgFeed/gabigordo 1.png" alt="imagem de perfil de gabigordo"><p>gabigordo</p></div></a></li>
-                                <li><a href="#"><div><img src="~/imgFeed/will-baiano 1.png" alt="imagem de perfil de will baiano"><p>will_baiano</p></div></a></li>
-                                <li><a href="#"><div><img src="~/imgFeed/tony_stark 1.png" alt="imagem de perfil de toy starky brasileiro"><p>adriano_stark</p></div></a></li>
-                                <li><a href="#"><div><img src="~/imgFeed/pele 1.png" alt="imagem de perfil de pelé"><p>king_pele</p></div></a></li>
-                                <li><a href="#"><div><img src="~/imgFeed/samuel-rosa-bebê 1.png" alt="imagem de perfil de samuel rosa bebê"><p>samuel_rosa</p></div></a></li>
-                                <li><a href="#"><div><img src="~/imgFeed/chaves_metal 1.png" alt="imagem de perfil de chaves metal"><p>chaves_metal</p></div></a></li>
+                                @foreach (var usuario in ViewBag.Stories){
+                                    <li><a href="#"><div><img src="~/imgFeed/chaves_metal 1.png" alt="imagem de perfil de chaves metal"><p>chaves_metal</p></div></a></li>
+                                }
+
+                                    
+
+                                
                             </ul>
                         </nav>
                 </section>

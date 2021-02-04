@@ -71,6 +71,8 @@ namespace InstaDev_s.Controllers
         [Route ("Feed")]
         public IActionResult Feed()
         {
+          
+            ViewBag.Stories = usuarioModel.ListarUsuario();
             return View();
         }
 
