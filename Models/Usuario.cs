@@ -28,19 +28,19 @@ namespace InstaDev_s.Models
         public string Mensagem { get; set; }        
         
 
-        private const string PATH = "Database/Usuarios.csv";
+        public const string PATH = "Database/Usuarios.csv";
 
         public Usuario(){
             CreateFolderAndFile(PATH);
-        }
-        public string Prepare(Usuario u){
-            return $"{u.IdUsuario};{u.Foto};{u.DataNascimento};{u.Nome};{u.Email};{u.Username};{u.Senha};{u.Seguidos}";
         }
         public void CadastrarUsuario(Usuario u){
             string[] linhas = {Prepare(u)};
             File.AppendAllLines(PATH, linhas);
         }
-        // public List<Usuario> Cadastro(){ //Perfil
+        public string Prepare(Usuario u){
+            return $"{u.IdUsuario};{u.Foto};{u.DataNascimento};{u.Nome};{u.Email};{u.Username};{u.Senha};{u.Seguidos}";
+        }
+        // public List<Usuario> MostrarUsuario(){ //Perfil
         //     List<Usuario> usuarios = new List<Usuario>();
         //     string[] linhas = File.ReadAllLines(PATH);
         //     foreach (var item in linhas)
@@ -95,10 +95,6 @@ namespace InstaDev_s.Models
 
             
         }
-
-        public void MostrarInformacoes(String logado){
-        }
-
         
         
         
