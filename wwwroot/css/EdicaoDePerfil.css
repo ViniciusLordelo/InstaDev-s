@@ -43,26 +43,26 @@ header {
 
 /* Fim do Header */
 /* Começo do Main */
-.contain {
+.E-contain {
     display: flex;
     justify-content: center;
     background: #FAFAFA;
     width: 100%;
     height: 100vh;
 }
-.conteudo1 {
-    width: 50%;
+.E-conteudo1 {
+    /* width: 50%; */
     display: flex;
     padding-top: 24px;
 }
 
-.content {
+.E-content {
     width: 50%;
     height: 100%;
     margin: auto;
 }
 
-.container {
+.E-container {
     width: 233px;
     height: 610px;
     background: #FFFFFF;
@@ -71,7 +71,7 @@ header {
 
 }
 
-.linha {
+.E-linha {
     position: absolute;
     width: 60px;
     border: 1px solid #000000;
@@ -80,7 +80,7 @@ header {
     margin-left: -29px;
 }
 
-.container1 {
+.E-container1 {
     width: 720px;
     height: 610px;
     background: #ffffff;
@@ -91,23 +91,23 @@ header {
     display: flex;
     justify-content: center;
 }
-.foto-user {
+.E-foto-user {
     display: flex;
     margin-right: 230px;
 
 }
-.foto-user img {
+.E-foto-user img {
     width: 50px;
     height: auto;
 }
-.info-user {
+.E-info-user {
     display: flex;
     flex-direction: column;
 }
-.alterar {
+.E-alterar {
     margin-left: 17px;
 }
-.info-user h2 {
+.E-info-user h2 {
     font-family: Segoe UI;
     font-style: normal;
     font-weight: 600;
@@ -115,31 +115,31 @@ header {
     line-height: 24px;
     margin-right: 40px;
 }
-.editarnome {
+.E-editarnome {
     display: flex;
     margin-top: 20px;
 }
-.nomeimput {
+.E-nomeimput {
     padding-top: 5px;
 }
-.texto1 {
+.E-texto1 {
     padding-top: 10px;
 }
-.texto2 {
+.E-texto2 {
     padding-top: 10px;
     padding-bottom: 20px;
 }
-.Editar p {
+.E-Editar p {
     padding-bottom: 20px;
 }
-.nomeimput {
+.E-nomeimput {
     margin-right: 12px;
 }
-.editperfil {
+.E-editperfil {
     display: flex;
     margin-right: 63px;
 }
-.editperfil label {
+.E-editperfil label {
     margin-right: 12px;
     font-family: "Segoe UI";
     font-style: normal;
@@ -148,14 +148,14 @@ header {
     line-height: 19px;
 
 }
-.labelperfil {
+.E-labelperfil {
     margin-top: 3px;
 }
-.editemail {
+.E-editemail {
     display: flex;
     margin-left: 11px;
 }
-.editemail1 label {
+.E-editemail1 label {
     margin-right: 5px;
     font-family: "Segoe UI";
     font-style: normal;
@@ -163,21 +163,21 @@ header {
     font-size: 14px;
     line-height: 19px;
 }
-.nomeimput label {
+.E-nomeimput label {
     font-family: "Segoe UI";
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
 }
-.conteudo {
+.E-conteudo {
     padding-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
    
 }
-.infopessoais p {
+.E-infopessoais p {
     font-family: "Segoe UI";
     font-style: normal;
     font-weight: normal;
@@ -185,7 +185,7 @@ header {
     line-height: 16px;
     color: #575757;
 }
-.container h2 {
+.E-container h2 {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-family: 'Segoi UI', Tahoma, "Geneva", Verdana, sans-serif;
@@ -197,7 +197,7 @@ header {
     padding-left: 20px;
 }
 
-.container1 h2 {
+.E-container1 h2 {
     font-family: "Segoe UI";
     font-style: normal;
     font-weight: 600;
@@ -206,7 +206,7 @@ header {
     color: #000000;
     text-align: center;
 }
-.container1 h3 {
+.E-container1 h3 {
     font-family: "Segoe UI";
     font-style: normal;
     font-weight: 600;
@@ -215,7 +215,7 @@ header {
     color: #2686CC;
 }
 
-.container1 p {
+.E-container1 p {
     font-family: "Segoe UI";
     font-style: normal;
     font-weight: normal;
@@ -224,12 +224,12 @@ header {
     color: #909090;
 }
 
-.container1 label {
+.E-container1 label {
     font-style: normal;
     font-family: "Segoe UI";
     color: #000000;
 }
-.imputnome {
+.E-imputnome {
     width: 354px;
     height: 30px;
     background: #FFFFFF;
@@ -238,7 +238,7 @@ header {
     border-radius: 2px;
     padding-left: 7px;
 }
-.imputusuario {
+.E-imputusuario {
     width: 354px;
     height: 30px;
     background: #FFFFFF;
@@ -247,10 +247,10 @@ header {
     border-radius: 2px;
     padding-left: 7px;
 }
-.imputusuario1 p {
+.E-imputusuario1 p {
     padding-bottom: 15px;
 }
-.imputemail {
+.E-imputemail {
     width: 354px;
     height: 30px;
     background: #FFFFFF;
@@ -259,7 +259,7 @@ header {
     border-radius: 2px;
     padding-left: 7px;
 }
-.enviar {
+.E-enviar {
     width: 66px;
     height: 30px;
     left: 925px;
@@ -268,7 +268,7 @@ header {
     border-radius: 2px;
     color: white;
 }
-.Editar a {
+.E-Editar a {
     color:#2686CC;
     text-decoration: none;
     font-family: "Segoe UI";
@@ -277,11 +277,11 @@ header {
     font-size: 12px;
     line-height: 16px;
 }
-.botao {
+.E-botao {
     padding-top: 40px;
     margin-left: 30px;
 }
-.botao a {
+.E-botao a {
     text-decoration: none;
     font-family: "Segoe UI";
     font-style: normal;
@@ -290,5 +290,10 @@ header {
     line-height: 16px;
     color: #2686CC;
     margin-left: 50px;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* Fim do Main */
