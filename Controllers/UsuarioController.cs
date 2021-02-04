@@ -26,9 +26,9 @@ namespace InstaDev_s.Controllers
             Usuario novoUsuario = new Usuario();
 
             novoUsuario.IdUsuario = Guid.NewGuid();
+            novoUsuario.Email = form["Email"];
             novoUsuario.Nome = form["Nome"];
             novoUsuario.Username = form["Username"];
-            novoUsuario.Email = form["Email"];
             novoUsuario.Senha = form["Senha"];
             novoUsuario.DataNascimento = DateTime.Parse(form["DataNascimento"]);
             novoUsuario.Foto = form["Foto"];
@@ -64,9 +64,7 @@ namespace InstaDev_s.Controllers
                 usuarioModel.Mensagem = "Preencha todos os campos!";
             }
 
-
-
-            return LocalRedirect("~/Usuario/MostrarUsuario");
+            return LocalRedirect("~/Login");
 
             
 
