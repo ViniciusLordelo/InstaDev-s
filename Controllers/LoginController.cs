@@ -21,15 +21,15 @@ namespace InstaDev_s.Controllers
             var logado =
             csv.Find(
                 x =>
-                x.Split(";")[4] == form["Email"] || x.Split(";")[5] == form["Username"] &&
-                x.Split(";")[6] == form["Senha"]);
+                x.Split(";")[4] == form["Email"] &&
+                x.Split(";")[6] == form["Senha"]
+            );
 
             if (logado != null)
             {
                 HttpContext.Session.SetString("IdLogado", logado.Split(";")[0]);
                 // ViewBag.logado = Ses;
                 Console.WriteLine("estou logado");
-                Console.WriteLine(HttpContext.Session.GetString("IdLogado"));
                 return LocalRedirect("~/");
                 
             }            
@@ -38,15 +38,15 @@ namespace InstaDev_s.Controllers
             return LocalRedirect("~/Login");
         }
 
-        // public IActionResult Info()
-        // {
-        //     ViewBag.logado = HttpContext.Session.GetString("IdLogado");
-        //     Usuario usuario = new Usuario();
+        public IActionResult Info()
+        {
+            ViewBag.logado = HttpContext.Session.GetString("IdLogado");
+            Usuario usuario = new Usuario();
 
-        //     ViewBag.Infos = usuario.MostrarInformacoes(ViewBag.logado);
+            ViewBag.Infos = usuario.MostrarInformacoes(ViewBag.logado);
 
-        //     return ViewBag.Infos;
-        // }
+            return ViewBag.Infos;
+        }
 
         [Route("Usuario/Perfil")]
         public IActionResult Perfil()

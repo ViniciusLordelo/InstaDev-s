@@ -46,15 +46,12 @@ namespace InstaDev_s.Models
         public Usuario(){
             CreateFolderAndFile(PATH);
         }
-        public string Prepare(Usuario u){
-            return $"{u.IdUsuario};{u.Foto};{u.DataNascimento};{u.Nome};{u.Email};{u.Username};{u.Senha};{u.Seguidos}";
-        }
         public void CadastrarUsuario(Usuario u){
             string[] linhas = {Prepare(u)};
             File.AppendAllLines(PATH, linhas);
         }
-        public void MostrarLogado(Usuario u){
-            
+        public string Prepare(Usuario u){
+            return $"{u.IdUsuario};{u.Foto};{u.DataNascimento};{u.Nome};{u.Email};{u.Username};{u.Senha};{u.Seguidos}";
         }
         // public List<Usuario> MostrarUsuario(){ //Perfil
         // }   
@@ -84,7 +81,7 @@ namespace InstaDev_s.Models
 
         } 
 
-        public List<Usuario> ListarUsuario(Usuario u){ //Stories
+        public List<Usuario> ListarUsuario(){ //Stories
 
             List<Usuario> usuarios = new List<Usuario>();
             string[] linhas = File.ReadAllLines(PATH);
@@ -99,11 +96,10 @@ namespace InstaDev_s.Models
                 novoUsuario.Email = linha[4];
                 novoUsuario.Username = linha[5];
                 novoUsuario.Senha = linha[6];
-                // novoUsuario.Seguidos = int.Parse(linha[7]);
+                // novoUsuario.Seguidos = Int32[].Parse(linha[7]);
+
             }
             return usuarios;
-
-
         }
 
 
