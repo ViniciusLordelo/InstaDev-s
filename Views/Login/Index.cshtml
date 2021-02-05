@@ -10,7 +10,7 @@
 
                 <img src="~/LoginImg/Instadev.svg" alt="Logo Instadev">
                 
-                <form method="POST" action='@Url.Action("Logar")'class="L-form_login">
+                <form action='@Url.Action("Logar")'class="L-form_login">
                     <input name="Email" type="email" class="input1" placeholder="Email" required />
                     <input name="Senha" type="password" class="input2" placeholder="Senha" required />
                     <button type="submit">Entrar</button>
@@ -28,7 +28,9 @@
 
         <div class="L-retangulo2">
             <div class="L-content2">
+
                 <h2>Não tem uma conta? <a asp-area="" asp-action="Index" asp-controller="Usuario">Cadastre-se</a></h2>
+                
             </div>
         </div>
         

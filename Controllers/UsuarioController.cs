@@ -11,6 +11,7 @@ namespace InstaDev_s.Controllers
     {
 
         Usuario usuarioModel = new Usuario();
+        LoginController login = new LoginController();
 
         [Route ("MostrarUsuario")]
         public IActionResult Index()
@@ -70,6 +71,14 @@ namespace InstaDev_s.Controllers
 
 
         }
+
+        // [Route("Perfil")]
+        // public IActionResult Perfil()
+        // {
+
+        //     return View();
+        // }
+ 
 
 
     }
