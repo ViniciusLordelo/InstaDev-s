@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using InstaDev_s.Controllers;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 
 
 namespace InstaDev_s.Models
@@ -12,7 +13,18 @@ namespace InstaDev_s.Models
 
         public System.Guid IdUsuario { get; set; }
 
-        public string Nome { get; set; }
+        public Usuario(string nome, string foto, int seguidos, string email, string username, string senha, string mensagem) 
+        {
+            this.Nome = nome;
+                this.Foto = foto;
+                this.Seguidos = seguidos;
+                this.Email = email;
+                this.Username = username;
+                this.Senha = senha;
+                this.Mensagem = mensagem;
+               
+        }
+                public string Nome { get; set; }
 
         public string Foto { get; set; }
 
@@ -44,24 +56,8 @@ namespace InstaDev_s.Models
         public void MostrarLogado(Usuario u){
             
         }
-        public List<Usuario> MostrarUsuario(){ //Perfil
-            List<Usuario> usuarios = new List<Usuario>();
-            string[] linhas = File.ReadAllLines(PATH);
-            foreach (var item in linhas)
-            {
-                string[] linha = item.Split(";");
-                Usuario novoUsuario = new Usuario();
-                novoUsuario.IdUsuario = Guid.Parse(linha[0]);
-                novoUsuario.Foto = linha[1];
-                novoUsuario.DataNascimento = DateTime.Parse(linha[2]);
-                novoUsuario.Nome = linha[3];
-                novoUsuario.Email = linha[4];
-                novoUsuario.Username = linha[5];
-                novoUsuario.Senha = linha[6];
-                // novoUsuario.Seguidos = int.Parse(linha[7]);
-            }
-            return usuarios;
-        }   
+        // public List<Usuario> MostrarUsuario(){ //Perfil
+        // }   
 
         public void EditarUsuario(Usuario u){
             List<string> linhas  = ReadAllLinesCSV(PATH);
@@ -88,7 +84,25 @@ namespace InstaDev_s.Models
 
         } 
 
-        public void ListarUsuario(){ //Stories
+        public List<Usuario> ListarUsuario(Usuario u){ //Stories
+
+            List<Usuario> usuarios = new List<Usuario>();
+            string[] linhas = File.ReadAllLines(PATH);
+            foreach (var item in linhas)
+            {
+                string[] linha = item.Split(";");
+                Usuario novoUsuario = new Usuario();
+                novoUsuario.IdUsuario = Guid.Parse(linha[0]);
+                novoUsuario.Foto = linha[1];
+                novoUsuario.DataNascimento = DateTime.Parse(linha[2]);
+                novoUsuario.Nome = linha[3];
+                novoUsuario.Email = linha[4];
+                novoUsuario.Username = linha[5];
+                novoUsuario.Senha = linha[6];
+                // novoUsuario.Seguidos = int.Parse(linha[7]);
+            }
+            return usuarios;
+
 
         }
 
@@ -103,9 +117,6 @@ namespace InstaDev_s.Models
 
             List<Usuario> infoUser = new List<Usuario>();
 
-
-
-            
             //Procurando o user pelo Id
             List<string> csv = ReadAllLinesCSV("Database/Usuarios.csv");
 

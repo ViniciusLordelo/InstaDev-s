@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using InstaDev_s.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Identity;
 
 namespace InstaDev_s.Controllers
 {
@@ -20,18 +22,18 @@ namespace InstaDev_s.Controllers
             csv.Find(
                 x =>
                 x.Split(";")[4] == form["Email"] || x.Split(";")[5] == form["Username"] &&
-                x.Split(";")[6] == form["Senha"]
-            );
+                x.Split(";")[6] == form["Senha"]);
 
             if (logado != null)
             {
                 HttpContext.Session.SetString("IdLogado", logado.Split(";")[0]);
-                ViewBag.logado = HttpContext.Session.GetString("IdLogado");
+                ViewBag.logado = Ses;
                 Console.WriteLine("estou logado");
                 Console.WriteLine(HttpContext.Session.GetString("IdLogado"));
                 return LocalRedirect("~/");
-            }
-
+                
+            }            
+            
             usuarioModel.Mensagem = "Dados incorretos, tente novamente...";
             return LocalRedirect("~/Login");
         }
@@ -50,7 +52,7 @@ namespace InstaDev_s.Controllers
         public IActionResult Perfil()
         {
             Usuario usuario = new Usuario();
-            ViewBag.Infos = usuario.MostrarInformacoes(HttpContext.Session.GetString("IdLogado"));
+            ViewBag.Infos = usuario.MostrarInformacoes(ViewBag.logado);
 
             return View();
 
