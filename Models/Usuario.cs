@@ -63,21 +63,20 @@ namespace InstaDev_s.Models
             linhas.RemoveAll(x => x.Split(";")[4] == u.Email);
             linhas.RemoveAll(x => x.Split(";")[3] == u.Nome);
             // linhas.RemoveAll(x => x.Split(";")[1] == u.Foto);
+            linhas.RemoveAll(x => x.Split(";")[0] == u.IdUsuario.ToString());
 
             linhas.Add(Prepare(u));
-
             RewriteCSV(PATH, linhas);
 
         }
 
-        public void DeletarUsuario(string userName){
+        public void DeletarUsuario(int id){
 
             List<string> linhas = ReadAllLinesCSV(PATH);
 
-            linhas.RemoveAll(x => x.Split(";")[0] == userName.ToString());
+            linhas.RemoveAll(x => x.Split(";")[0] == IdUsuario.ToString());
             
             RewriteCSV(PATH, linhas);
-
 
         } 
 
@@ -145,6 +144,11 @@ namespace InstaDev_s.Models
         
         
         
-    }      
+      
     
+
+        //public void Seguir(){
+
+        //}
+    }
 }

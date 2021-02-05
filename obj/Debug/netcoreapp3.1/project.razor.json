@@ -14417,11 +14417,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\Views\\EdicaoDePerfil\\Index.cshtml",
-      "TargetPath": "Views\\EdicaoDePerfil\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\Views\\Login\\Perfil.cshtml",
       "TargetPath": "Views\\Login\\Perfil.cshtml",
       "FileKind": "mvc"
@@ -14429,6 +14424,11 @@
     {
       "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\Views\\Usuario\\Edicao.cshtml",
+      "TargetPath": "Views\\Usuario\\Edicao.cshtml",
       "FileKind": "mvc"
     },
     {
