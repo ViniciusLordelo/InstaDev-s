@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using InstaDev_s.Models;
 using Microsoft.AspNetCore.Http;
@@ -22,8 +23,9 @@ namespace InstaDev_s.Controllers
 
             if (logado != null)
             {
-                HttpContext.Session.SetString("IdLogado", logado.Split(";")[0]);
-                ViewBag.logado = HttpContext.Session.GetString("IdLogado");
+                HttpContext.Session.SetString("IdUsuario", logado.Split(";")[0]);
+                ViewBag.logado = HttpContext.Session.GetString("IdUsuario");
+                Console.WriteLine($"Estou Logado");
                 return LocalRedirect("~/");
             }
 
