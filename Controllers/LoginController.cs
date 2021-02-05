@@ -27,7 +27,7 @@ namespace InstaDev_s.Controllers
             if (logado != null)
             {
                 HttpContext.Session.SetString("IdLogado", logado.Split(";")[0]);
-                ViewBag.logado = Ses;
+                // ViewBag.logado = Ses;
                 Console.WriteLine("estou logado");
                 Console.WriteLine(HttpContext.Session.GetString("IdLogado"));
                 return LocalRedirect("~/");
