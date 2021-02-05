@@ -62,8 +62,6 @@ namespace InstaDev_s.Controllers
                 usuarioModel.Mensagem = "Preencha todos os campos!";
             }
 
-
-
             return LocalRedirect("~/Usuario/MostrarUsuario");
 
         }

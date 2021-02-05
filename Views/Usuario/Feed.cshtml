@@ -1,4 +1,5 @@
-﻿@{
+﻿@model Publicacao;
+@{
     ViewData["Title"] = "Feed";
 }
 
@@ -7,9 +8,12 @@
             <div class="F-conteiner">
                 <section class="F-storyes ">
                         <nav>
-                            <ul>
-                                @foreach (var usuario in ViewBag.Stories){
-                                    <li><a href="#"><div><img src="~/imgFeed/chaves_metal 1.png" alt="imagem de perfil de chaves metal"><p>chaves_metal</p></div></a></li>
+                            <ul class="F-img-pr">
+                                @foreach (var usuarios in ViewBag.Stories){
+                                    <li>
+                                        <img src="~/imgCadastro/@usuarios.Foto" alt="Imagem perfil " width="40">
+                                        <p>@usuarios.Nome</p>
+                                    </li>
                                 }
 
                                     
@@ -29,10 +33,10 @@
                 <div class="F-postar">
                     <div class="F-post"><img src="~/imgFeed/thank-you 3.png" alt="foto de perfil de Marcos Jeeves "><p>Postar</p></div> 
                         <div class="F-botoes">
-                            <form class="F-btns" action="">
+                            <form class="F-btns" action= '@Url.Action(NovaPublicacao)' enctype="multipart/form-data">
                                 <input class="F-descricao" type="text" placeholder="Digite a descrição da imagem">  <!--placeholder= escrever texto-->
-                                <input class="F-escolha" type="text" placeholder="Escolha a imagem">
-                                    <button class="F-btn"><div class="span1"><span >Postar</span></div>  </button>
+                                <input class="F-escolha" type="file" placeholder="Escolha a imagem">
+                                    <button class="F-btn">Postar</button>
                             </form>
                     </div><!---final botoes-->
                 </div> <!-- final postar -->
@@ -77,6 +81,6 @@
                             <div class="F-coment"><p>yes_baby</p><span>thank you</span></div>
                             <div class="F-coment"><p>king_pele</p><span>Esses são bons de bola, entende?</span></div>
                         </div>
-                </div> <!-- final postagem -->
+               </div>  <!-- final postagem -->
 
        </div> <!-- final do alinhar  -->
