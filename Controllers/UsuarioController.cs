@@ -91,7 +91,7 @@ namespace InstaDev_s.Controllers
             usuario.Foto = "foto";
 
             usuarioModel.EditarUsuario(usuario);
-            return View();
+            return LocalRedirect("~/usuario/EdicaoDePerfil");
         }
         public IActionResult Excluir(int id)
         {
