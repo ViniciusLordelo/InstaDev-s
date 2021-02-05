@@ -10,8 +10,8 @@
 
                 <img src="~/LoginImg/Instadev.svg" alt="Logo Instadev">
                 
-                <form method="POST" action='@Url.Action("Logar")'class="L-form_login">
-                    <input name="Email" type="email" class="input1" placeholder="Email" required />
+                <form method="POST" action='@Url.Action("Logar")' enctype="multipart/form-data" class="L-form_login">
+                    <input name="Email" type="email" class="input1" placeholder="Email ou Username" required />
                     <input name="Senha" type="password" class="input2" placeholder="Senha" required />
                     <button type="submit">Entrar</button>
                 </form>

@@ -17,20 +17,22 @@ namespace InstaDev_s.Controllers
             var logado =
             csv.Find(
                 x =>
-                x.Split(";")[4] == form["Email"] || x.Split(";")[5] == form["Username"] &&
+                (x.Split(";")[4] == form["Email"] || x.Split(";")[5] == form["Email"]) &&
                 x.Split(";")[6] == form["Senha"]
             );
+
 
             if (logado != null)
             {
                 HttpContext.Session.SetString("IdUsuario", logado.Split(";")[0]);
-                ViewBag.logado = HttpContext.Session.GetString("IdUsuario");
-                Console.WriteLine($"Estou Logado");
-                return LocalRedirect("~/");
+                // HttpContext.Session.SetString("EmailUsuario", logado.Split(";")[4]);
+                ViewBag.logado = HttpContext.Session.GetString("EmailUsuario");
+                Console.WriteLine("Estou Logado");
+                return LocalRedirect("~/Usuario");
             }
 
             usuarioModel.Mensagem = "Dados incorretos, tente novamente...";
-            return LocalRedirect("~/Login");
+            return LocalRedirect("~/Feed");
         }
 
         public List<Usuario> UsuariosLogados(){
