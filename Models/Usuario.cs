@@ -96,7 +96,8 @@ namespace InstaDev_s.Models
                 novoUsuario.Username = linha[5];
                 novoUsuario.Senha = linha[6];
                 // novoUsuario.Seguidos = Int32[].Parse(linha[7]);
-
+                
+                usuarios.Add(novoUsuario);
             }
             return usuarios;
         }
