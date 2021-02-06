@@ -15,12 +15,14 @@ namespace InstaDev_s.Models
         public Publicacao(){
             CreateFolderAndFile(PATH);
         }
-        public string Prepare(Publicacao p){
+        public string Prepare(Publicacao p)
+        {
             return $"{p.IdPublicacao};{p.Imagem};{p.Legenda};{p.Likes}";
         }
 
-        
-        public void CriarPublicacao(Publicacao p){
+       
+        public void CriarPublicacao(Publicacao p)
+        {
 
             string[] linhas = {Prepare(p)};
             

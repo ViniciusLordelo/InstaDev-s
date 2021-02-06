@@ -10,16 +10,18 @@
             <h2>Editar Perfil</h2>
         </div>
         <div class="E-container1">
+            <form method="POST" action='@Url.Action("Edicao")' enctype="multipart/form-data">
             <div class="E-conteudo">
-                <form method="POST" action='@Url.Action("Edicao")' enctype="multipart/form-data">
                 <div class="E-foto-user">
                     <div>
-                        @* <img src="~/wwwroot/img/icon/@IdUsuario.Foto" alt="Sua imagem de perfil"></img> *@
+                        <img src="~/imgEdicaoDePerfil/User.svg" alt="Sua imagem de perfil"></img>
                     </div>
                     <div class="E-info-user">
                         <h2>yes_baby</h2>
                         <div class="E-alterar">
+                            <form method="POST" action='@Url.Action("EditarFoto")' enctype="multipart/form-data">
                             <a asp-controller="Usuario" asp-action="EditarFoto">Alterar foto de perfil</a>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -28,11 +30,11 @@
                         <label>Nome</label>
                     </div>
                     <div class="E-Editar">
-                        <input class="E-imputnome" value="" type="text" name="Nome"></input>
+                        <input class="E-imputnome" value="Marcos Jeeves" type="text" name="Nome"></input>
                         <p class="E-texto1">Ajude as pessoas a descobrir sua conta usando o nome pelo qual <br>
                             você é conhecido: seu
                             nome
-                            completo, apelido ou nome <br> comercial.</p>
+                            completo, apelido ou nome social </p>
                         <p>Você pode alterar o seu nome apenas duas vezes a cada 14 dias.</p>
                     </div>
                 </div>
@@ -44,7 +46,7 @@
                         <input class="E-imputusuario" value="Yes_baby" type="text" name="Username"></input>
                         <p class="E-texto2">Na maioria dos casos, você poderá alterar seu nome de usuário <br>
                             novamente para
-                            nascimento_tr por mais 14 dias.</p>
+                            nascimento por mais 14 dias.</p>
                         <p><strong>Informações Pessoais</strong></p>
                         <p>Forneça suas informações pessoais, mesmo se a conta for usada <br> para uma empresa,
                             um
@@ -53,13 +55,15 @@
 
                     </div>
                 </div>
-                <div class="E-editemail1">
-                    <Label>Email</Label>
-                </div>
+                <div class="E-Fim">
                 <div class="E-Botao">
+                    <Label>Email</Label>
                     <input class="E-imputemail" value="yes_baby@email.com" type="text" name="Email"></imput>
-                    <button class="button1" type="submit">Enviar</button> <a asp-action="Excluir" asp-controller="Usuario" asp-area="">Desativar minha conta definitivamente</a>
-                    </form>
+                    <div class="E-button2">
+                    <button class="E-button1" type="submit">Enviar</button> <a asp-action="Excluir" asp-controller="Usuario" asp-area="">Desativar minha conta definitivamente</a>
+                    </div>
+                    </div>
+                </form>
                 </div>
             </div>
         </div>

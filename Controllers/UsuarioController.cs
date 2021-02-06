@@ -23,7 +23,6 @@ namespace InstaDev_s.Controllers
         [Route("CadastrarUsuario")]
         public IActionResult CadastrarUsuario(IFormCollection form)
         {
-            Random numeroID     = new Random();
 
             Usuario novoUsuario = new Usuario();
          
@@ -74,6 +73,7 @@ namespace InstaDev_s.Controllers
 
         }
 
+
         [Route("EdicaoDePerfil")]
         public IActionResult Edicao(IFormCollection form)
         {
@@ -86,6 +86,8 @@ namespace InstaDev_s.Controllers
             usuarioModel.EditarUsuario(usuario);
             return View();
         }
+
+
         [Route("EditarFoto")]
         public IActionResult EditarFoto(string foto)
         // string foto -> iStock-648229868-1024x909.png
@@ -95,12 +97,68 @@ namespace InstaDev_s.Controllers
             usuario.Foto = "foto";
 
             usuarioModel.EditarUsuario(usuario);
-            return View();
+            return LocalRedirect("~/usuario/EdicaoDePerfil");
         }
+
+
+        [Route("Excluir")]
         public IActionResult Excluir(int id)
         {
             usuarioModel.DeletarUsuario(id);
             return LocalRedirect("~/Login/Index");
         }
+
+
+        [Route ("Feed")]
+        public IActionResult Feed()
+        {
+          
+            ViewBag.Stories = usuarioModel.ListarUsuario();
+            return View();
+        }
+
+
+        [Route("NovaPublição")]
+        public IActionResult NovaPublicacao(IFormCollection form){
+
+        Usuario novoUsuario = new Usuario();
+        novoUsuario.Foto = form["Foto"];
+        if (form.Files.Count > 0)
+            {
+                
+                var file = form.Files[0];
+                var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/imgCadastro");
+
+                if (!Directory.Exists(folder))
+                {
+                    Directory.CreateDirectory(folder);
+                }
+
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/imgCadastro/", folder, file.FileName);
+
+                using(var stream = new FileStream(path, FileMode.Create))
+                {
+                    file.CopyTo(stream);
+                }
+
+                novoUsuario.Foto = file.FileName;
+            }else{
+                novoUsuario.Foto = "padrao.png";
+            }
+
+            // if(novoUsuario.Nome != null && novoUsuario.Email != null && novoUsuario.Senha != null && novoUsuario.Username != null)
+            // {
+            //     usuarioModel.CadastrarUsuario(novoUsuario);
+            //     ViewBag.Usuario = usuarioModel.MostrarUsuario();
+            // }else{
+            //     usuarioModel.Mensagem = "Preencha todos os campos!";
+            // }
+
+
+
+            return LocalRedirect("~/Usuario/Feed");
+
+        }
+
     }
 }
