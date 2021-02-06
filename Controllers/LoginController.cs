@@ -27,10 +27,8 @@ namespace InstaDev_s.Controllers
             );
             if (logado != null)
             {
+                
                 HttpContext.Session.SetString("IdUsuario", logado.Split(";")[0].ToString());
-                
-                
-
                 ViewBag.logado = HttpContext.Session.GetString("IdUsuario");
                 
                 return LocalRedirect("~/Usuario/Perfil");
