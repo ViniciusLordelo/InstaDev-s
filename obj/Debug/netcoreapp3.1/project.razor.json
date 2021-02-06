@@ -14392,6 +14392,7 @@
   "RootNamespace": "InstaDev_s",
   "Documents": [
     {
+<<<<<<< HEAD
       "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\Curso ADS\\InstaDev-s\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -14429,6 +14430,45 @@
     {
       "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\Curso ADS\\InstaDev-s\\Views\\Login\\Perfil.cshtml",
       "TargetPath": "Views\\Login\\Perfil.cshtml",
+=======
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\Curso ADS\\InstaDev-s\\Views\\Perfil\\Index.cshtml",
+      "TargetPath": "Views\\Perfil\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\Curso ADS\\InstaDev-s\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\Curso ADS\\InstaDev-s\\Views\\Usuario\\Index.cshtml",
+      "TargetPath": "Views\\Usuario\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\Curso ADS\\InstaDev-s\\Views\\Usuario\\Edicao.cshtml",
+      "TargetPath": "Views\\Usuario\\Edicao.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\Curso ADS\\InstaDev-s\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\Curso ADS\\InstaDev-s\\Views\\Login\\Index.cshtml",
+      "TargetPath": "Views\\Login\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\Curso ADS\\InstaDev-s\\Views\\Feed\\Index.cshtml",
+      "TargetPath": "Views\\Feed\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\Curso ADS\\InstaDev-s\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+>>>>>>> Page/EdicaoDePerfil
       "FileKind": "mvc"
     },
     {
