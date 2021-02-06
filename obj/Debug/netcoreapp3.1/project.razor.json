@@ -1,5 +1,17 @@
 {
+<<<<<<< HEAD
   "FilePath": "c:\\Users\\mrodr.LAPTOP-DFNK1JF6\\Desktop\\InstaDev-s\\InstaDev-s.csproj",
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\InstaDev-s.csproj",
+=======
+  "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\InstaDev-s\\InstaDev-s.csproj",
+>>>>>>> Page/EdicaoDePerfil
+=======
+  "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\Curso ADS\\InstaDev-s\\InstaDev-s.csproj",
+>>>>>>> 3e14b191db0c1c20f7bdc0c7e9a1805dec3bd9ca
+>>>>>>> 72f797850b75fd17781b3aa22d62b9191ebbc565
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14392,8 +14404,70 @@
   "RootNamespace": "InstaDev_s",
   "Documents": [
     {
+<<<<<<< HEAD
       "FilePath": "c:\\Users\\mrodr.LAPTOP-DFNK1JF6\\Desktop\\InstaDev-s\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\Views\\Feed\\Index.cshtml",
+      "TargetPath": "Views\\Feed\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\Views\\Usuario\\Index.cshtml",
+      "TargetPath": "Views\\Usuario\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\Views\\Login\\Perfil.cshtml",
+      "TargetPath": "Views\\Login\\Perfil.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\Views\\Usuario\\Edicao.cshtml",
+      "TargetPath": "Views\\Usuario\\Edicao.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\Views\\Login\\Index.cshtml",
+      "TargetPath": "Views\\Login\\Index.cshtml",
+=======
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\InstaDev-s\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\InstaDev-s\\Views\\_ViewImports.cshtml",
+=======
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\Curso ADS\\InstaDev-s\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\Curso ADS\\InstaDev-s\\Views\\Usuario\\Index.cshtml",
+      "TargetPath": "Views\\Usuario\\Index.cshtml",
+>>>>>>> 72f797850b75fd17781b3aa22d62b9191ebbc565
       "FileKind": "mvc"
     },
     {
@@ -14419,11 +14493,63 @@
     {
       "FilePath": "c:\\Users\\mrodr.LAPTOP-DFNK1JF6\\Desktop\\InstaDev-s\\Views\\Login\\Perfil.cshtml",
       "TargetPath": "Views\\Login\\Perfil.cshtml",
+<<<<<<< HEAD
       "FileKind": "mvc"
     },
     {
       "FilePath": "c:\\Users\\mrodr.LAPTOP-DFNK1JF6\\Desktop\\InstaDev-s\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+=======
+=======
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\Curso ADS\\InstaDev-s\\Views\\Perfil\\Index.cshtml",
+      "TargetPath": "Views\\Perfil\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\Curso ADS\\InstaDev-s\\Views\\_ViewImports.cshtml",
+>>>>>>> 3e14b191db0c1c20f7bdc0c7e9a1805dec3bd9ca
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+<<<<<<< HEAD
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\InstaDev-s\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\InstaDev-s\\Views\\Usuario\\Index.cshtml",
+      "TargetPath": "Views\\Usuario\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\InstaDev-s\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\InstaDev-s\\Views\\Usuario\\Edicao.cshtml",
+      "TargetPath": "Views\\Usuario\\Edicao.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\InstaDev-s\\Views\\Login\\Index.cshtml",
+      "TargetPath": "Views\\Login\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\InstaDev-s\\Views\\Feed\\Index.cshtml",
+      "TargetPath": "Views\\Feed\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\InstaDev-s\\Views\\Perfil\\Index.cshtml",
+      "TargetPath": "Views\\Perfil\\Index.cshtml",
+>>>>>>> Page/EdicaoDePerfil
+=======
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\Curso ADS\\InstaDev-s\\Views\\Usuario\\Index.cshtml",
+      "TargetPath": "Views\\Usuario\\Index.cshtml",
+>>>>>>> 72f797850b75fd17781b3aa22d62b9191ebbc565
       "FileKind": "mvc"
     },
     {
@@ -14435,6 +14561,31 @@
       "FilePath": "c:\\Users\\mrodr.LAPTOP-DFNK1JF6\\Desktop\\InstaDev-s\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
+<<<<<<< HEAD
+=======
+    },
+    {
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\Curso ADS\\InstaDev-s\\Views\\Login\\Index.cshtml",
+      "TargetPath": "Views\\Login\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\Curso ADS\\InstaDev-s\\Views\\Feed\\Index.cshtml",
+      "TargetPath": "Views\\Feed\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\Curso ADS\\InstaDev-s\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+>>>>>>> Page/EdicaoDePerfil
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\felip\\OneDrive\\Área de Trabalho\\Curso ADS\\InstaDev-s\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+>>>>>>> 3e14b191db0c1c20f7bdc0c7e9a1805dec3bd9ca
+      "FileKind": "mvc"
+>>>>>>> 72f797850b75fd17781b3aa22d62b9191ebbc565
     }
   ],
   "SerializationFormat": "0.2"
