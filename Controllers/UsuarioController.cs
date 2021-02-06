@@ -6,37 +6,38 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace InstaDev_s.Controllers
 {
-    [Route ("Usuario")]
+    [Route("Usuario")]
     public class UsuarioController : Controller
     {
 
         Usuario usuarioModel = new Usuario();
         LoginController login = new LoginController();
 
-        [Route ("MostrarUsuario")]
+        [Route("MostrarUsuario")]
         public IActionResult Index()
         {
             return View();
         }
 
-        
 
-        [Route ("CadastrarUsuario")]
-        public IActionResult CadastrarUsuario (IFormCollection form)
+        [Route("CadastrarUsuario")]
+        public IActionResult CadastrarUsuario(IFormCollection form)
         {
-            Usuario novoUsuario = new Usuario();
+            Random numeroID     = new Random();
 
-            novoUsuario.IdUsuario = Guid.NewGuid();
-            novoUsuario.Email = form["Email"];
-            novoUsuario.Nome = form["Nome"];
-            novoUsuario.Username = form["Username"];
-            novoUsuario.Senha = form["Senha"];
+            Usuario novoUsuario = new Usuario();
+         
+            novoUsuario.IdUsuario      = Guid.NewGuid();
+            novoUsuario.Email          = form["Email"];
+            novoUsuario.Nome           = form["Nome"];
+            novoUsuario.Username       = form["Username"];
+            novoUsuario.Senha          = form["Senha"];
             novoUsuario.DataNascimento = DateTime.Parse(form["DataNascimento"]);
-            novoUsuario.Foto = form["Foto"];
-            
+            novoUsuario.Foto           = form["Foto"];
+
             if (form.Files.Count > 0)
             {
-                
+
                 var file = form.Files[0];
                 var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/imgCadastro");
 
@@ -47,21 +48,25 @@ namespace InstaDev_s.Controllers
 
                 var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/imgCadastro/", folder, file.FileName);
 
-                using(var stream = new FileStream(path, FileMode.Create))
+                using (var stream = new FileStream(path, FileMode.Create))
                 {
                     file.CopyTo(stream);
                 }
 
                 novoUsuario.Foto = file.FileName;
-            }else{
+            }
+            else
+            {
                 novoUsuario.Foto = "padrao.png";
             }
 
-            if(novoUsuario.Nome != null && novoUsuario.Email != null && novoUsuario.Senha != null && novoUsuario.Username != null)
+            if (novoUsuario.Nome != null && novoUsuario.Email != null && novoUsuario.Senha != null && novoUsuario.Username != null)
             {
                 usuarioModel.CadastrarUsuario(novoUsuario);
-                // ViewBag.Usuario = usuarioModel.MostrarUsuario();
-            }else{
+               // ViewBag.Usuario = usuarioModel.MostrarUsuario();
+            }
+            else
+            {
                 usuarioModel.Mensagem = "Preencha todos os campos!";
             }
 
@@ -69,7 +74,7 @@ namespace InstaDev_s.Controllers
 
         }
 
-        [Route ("EdicaoDePerfil")]
+        [Route("EdicaoDePerfil")]
         public IActionResult Edicao(IFormCollection form)
         {
             Usuario usuario = new Usuario();
@@ -81,12 +86,12 @@ namespace InstaDev_s.Controllers
             usuarioModel.EditarUsuario(usuario);
             return View();
         }
-        [Route ("EditarFoto")]
-        public IActionResult EditarFoto (string foto)
+        [Route("EditarFoto")]
+        public IActionResult EditarFoto(string foto)
         // string foto -> iStock-648229868-1024x909.png
         {
             Usuario usuario = new Usuario();
-            
+
             usuario.Foto = "foto";
 
             usuarioModel.EditarUsuario(usuario);
