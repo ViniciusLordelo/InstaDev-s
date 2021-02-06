@@ -125,9 +125,9 @@ namespace InstaDev_s.Models
                 if (info != null)
                 {
                     Usuario usuario = new Usuario();
-                    usuario.Foto = csv.Find(x => x.Split(";")[1] == Foto);
-                    usuario.Nome = csv.Find(x => x.Split(";")[3] == Nome);
-                    usuario.Username = csv.Find(x => x.Split(";")[5] == Username);
+                    usuario.Foto = csv.Find(x => x.Split(";")[1] == usuario.Foto);
+                    usuario.Nome = csv.Find(x => x.Split(";")[3] == usuario.Nome);
+                    usuario.Username = csv.Find(x => x.Split(";")[5] == usuario.Username);
 
                     infoUser.Add(usuario);
                     return infoUser;

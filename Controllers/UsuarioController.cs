@@ -92,6 +92,7 @@ namespace InstaDev_s.Controllers
             usuarioModel.EditarUsuario(usuario);
             return LocalRedirect("~/usuario/EdicaoDePerfil");
         }
+        [Route("Excluir")]
         public IActionResult Excluir(int id)
         {
             usuarioModel.DeletarUsuario(id);
@@ -104,7 +105,7 @@ namespace InstaDev_s.Controllers
             ViewBag.Stories = usuarioModel.ListarUsuario();
             return View();
         }
-
+        [Route("NovaPublição")]
         public IActionResult NovaPublicacao(IFormCollection form){
 
         Usuario novoUsuario = new Usuario();
