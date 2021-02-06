@@ -29,8 +29,7 @@ namespace InstaDev_s.Controllers
             {
                 
                 HttpContext.Session.SetString("IdUsuario", logado.Split(";")[0].ToString());
-                ViewBag.logado = HttpContext.Session.GetString("IdUsuario");
-                
+                ViewBag.logado = HttpContext.Session.GetString("IdUsuario");;
                 return LocalRedirect("~/Usuario/Perfil");
                 
             }            
@@ -40,20 +39,20 @@ namespace InstaDev_s.Controllers
             return LocalRedirect("~/Login");
         }
 
-        public IActionResult Info()
-        {
-            ViewBag.logado = HttpContext.Session.GetString("IdLogado");
-            Usuario usuario = new Usuario();
+        // public IActionResult Info()
+        // {
+        //     Usuario usuario = new Usuario();
 
-            ViewBag.Infos = usuario.MostrarInformacoes(ViewBag.logado);
+        //     ViewBag.Infos = usuario.MostrarInformacoes(ViewBag.logado);
 
-            return ViewBag.Infos;
-        }
+        //     return ViewBag.Infos;
+        // }
 
         [Route("Usuario/Perfil")]
         public IActionResult Perfil()
         {
             Usuario usuario = new Usuario();
+            ViewBag.logado = HttpContext.Session.GetString("IdLogado");
             ViewBag.Infos = usuario.MostrarInformacoes(ViewBag.logado);
 
             return View();
