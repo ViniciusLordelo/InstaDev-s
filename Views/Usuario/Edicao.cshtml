@@ -10,8 +10,8 @@
             <h2>Editar Perfil</h2>
         </div>
         <div class="E-container1">
+            <form method="POST" action='@Url.Action("Edicao")' enctype="multipart/form-data">
             <div class="E-conteudo">
-                <form method="POST" action='@Url.Action("Edicao")' enctype="multipart/form-data">
                 <div class="E-foto-user">
                     <div>
                         <img src="~/imgEdicaoDePerfil/User.svg" alt="Sua imagem de perfil"></img>
@@ -62,8 +62,8 @@
                     <div class="E-button2">
                     <button class="E-button1" type="submit">Enviar</button> <a asp-action="Excluir" asp-controller="Usuario" asp-area="">Desativar minha conta definitivamente</a>
                     </div>
-                    </form>
                     </div>
+                </form>
                 </div>
             </div>
         </div>

@@ -13,6 +13,7 @@
             break;
 
         case "Feed":
+            <link rel="stylesheet" href="~/css/Feed.css" />
             break;
 
         case "Edição de Perfil":
@@ -33,29 +34,74 @@
 </head>
 
 <body>
-    @if (ViewBag.Logado != null)
+    @switch (ViewData["Title"])
     {
+        case "Perfil":
+            <header>
 
-        <header>
+                <div class="content flex-center-bt">
+                    <a href="Usuario/Feed"><img src="~/imgPerfil/Logo.svg" alt=""></a>
+                    <form class="pesquisa" action="">
+                        <input class="input" placeholder="Pesquisar" type="text">
+                    </form>
+                    <nav>
+                        <ul class="links flex-center-bt">
+                            @* <li><a asp-area="" asp-action="Index" asp-controller="Usuario">Cadastrar</a></li> *@
+                            <li><a href="#"><img src="~/imgPerfil/Casa.svg" alt=""></a></li>
+                            <li><a href="#"><img src="~/imgPerfil/Aviao.svg" alt=""></a></li>
+                            <li><a href="#"><img src="~/imgPerfil/Compasso.svg" alt=""></a></li>
+                            <li><a href="#"><img src="~/imgPerfil/Coracao.svg" alt=""></a></li>
+                            <li><a href="#"><img src="~/imgPerfil/User.svg" alt=""></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            break;
 
-            <div class="content flex-center-bt">
-                <a href="Usuario/Feed"><img src="~/imgPerfil/Logo.svg" alt=""></a>
-                <form class="pesquisa" action="">
-                    <input class="input" placeholder="Pesquisar" type="text">
-                </form>
-                <nav>
-                    <ul class="links flex-center-bt">
-                        @* <li><a asp-area="" asp-action="Index" asp-controller="Usuario">Cadastrar</a></li> *@
-                        <li><a href="#"><img src="~/imgPerfil/Casa.svg" alt=""></a></li>
-                        <li><a href="#"><img src="~/imgPerfil/Aviao.svg" alt=""></a></li>
-                        <li><a href="#"><img src="~/imgPerfil/Compasso.svg" alt=""></a></li>
-                        <li><a href="#"><img src="~/imgPerfil/Coracao.svg" alt=""></a></li>
-                        <li><a href="#"><img src="~/imgPerfil/User.svg" alt=""></a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        case "Edição de Perfil":
+            <header>
+
+                <div class="content flex-center-bt">
+                    <a href="Usuario/Feed"><img src="~/imgPerfil/Logo.svg" alt=""></a>
+                    <form class="pesquisa" action="">
+                        <input class="input" placeholder="Pesquisar" type="text">
+                    </form>
+                    <nav>
+                        <ul class="links flex-center-bt">
+                            @* <li><a asp-area="" asp-action="Index" asp-controller="Usuario">Cadastrar</a></li> *@
+                            <li><a href="#"><img src="~/imgPerfil/Casa.svg" alt=""></a></li>
+                            <li><a href="#"><img src="~/imgPerfil/Aviao.svg" alt=""></a></li>
+                            <li><a href="#"><img src="~/imgPerfil/Compasso.svg" alt=""></a></li>
+                            <li><a href="#"><img src="~/imgPerfil/Coracao.svg" alt=""></a></li>
+                            <li><a href="#"><img src="~/imgPerfil/User.svg" alt=""></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            break;
+        case "Feed":
+            <header>
+
+                <div class="content flex-center-bt">
+                    <a href="Usuario/Feed"><img src="~/imgPerfil/Logo.svg" alt=""></a>
+                    <form class="pesquisa" action="">
+                        <input class="input" placeholder="Pesquisar" type="text">
+                    </form>
+                    <nav>
+                        <ul class="links flex-center-bt">
+                            @* <li><a asp-area="" asp-action="Index" asp-controller="Usuario">Cadastrar</a></li> *@
+                            <li><a href="#"><img src="~/imgPerfil/Casa.svg" alt=""></a></li>
+                            <li><a href="#"><img src="~/imgPerfil/Aviao.svg" alt=""></a></li>
+                            <li><a href="#"><img src="~/imgPerfil/Compasso.svg" alt=""></a></li>
+                            <li><a href="#"><img src="~/imgPerfil/Coracao.svg" alt=""></a></li>
+                            <li><a href="#"><img src="~/imgPerfil/User.svg" alt=""></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            break;
     }
+
 
     <div class="container">
         <main role="main" class="pb-3">
