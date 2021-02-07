@@ -1,11 +1,12 @@
 using System.Collections.Generic;
 using System.IO;
+using System;
 
 namespace InstaDev_s.Models
 {
     public class Publicacao : InstadevBase
     {
-        public int IdPublicacao { get; set; }
+        public System.Guid IdPublicacao { get; set; }
         public string Imagem { get; set; }
         public string Legenda { get; set; }
         public int Likes { get; set; }
@@ -42,7 +43,7 @@ namespace InstaDev_s.Models
                 string[] linha = item.Split(";");
 
                 Publicacao novaPublicacao = new Publicacao();
-                novaPublicacao.IdPublicacao = int.Parse(linha[0]);
+                novaPublicacao.IdPublicacao = Guid.Parse(linha[0]);
                 novaPublicacao.Imagem= linha[1];
                 novaPublicacao.Legenda = linha[2];
                 novaPublicacao.Likes = int.Parse(linha[3]);

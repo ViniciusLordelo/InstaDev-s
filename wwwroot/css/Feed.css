@@ -61,7 +61,7 @@ header
 
 .input::placeholder
 {
-    background-image: url("../imgEdicaoDePerfil/Lupa.svg");
+    background-image: url("../imgCadastro/Lupa.svg");
     background-repeat: no-repeat;
     background-position-x: 64px;
     background-position-y: 3px;
@@ -257,20 +257,30 @@ main
 
  .input
 {
-     display: none;
+    display: none;
 } 
 
-  .F-escolha
+.F-escolha
 {
-    
-  
     border-radius: 5px; 
     text-align: center;  
     width: 0.1px;   
     height: 0.1px; 
-
+    background: #D1D1D1;
  }
 
+.ed-foto
+{
+    background-color: #D1D1D1;
+    border-radius: 5px;
+    font-family: 'Segoe UI' ;
+    height: 27px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
 /* input#file-upload-button 
 {
  display: none;

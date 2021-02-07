@@ -8,21 +8,15 @@ namespace InstaDev_s.Controllers
 {
     public class PublicacaoController : Controller
      {
-        
-       
-
+        Publicacao publicacaoModel = new Publicacao();
         [Route ("Feed")]
-        //  public IActionResult Feed()
-        //  {
-         
-        //      return View();
-        //  }
         public IActionResult NovaPublicacao(IFormCollection form){
 
-        Usuario novoUsuario = new Usuario();
-        novoUsuario.Foto = form["Foto"];
+        Publicacao NovaPublicacao = new Publicacao();
+        NovaPublicacao.Imagem = form["Escolha"];
         if (form.Files.Count > 0)
             {
+
                 
                 var file = form.Files[0];
                 var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/imgCadastro");
@@ -39,20 +33,19 @@ namespace InstaDev_s.Controllers
                     file.CopyTo(stream);
                 }
 
-                novoUsuario.Foto = file.FileName;
+                NovaPublicacao.Imagem = file.FileName;
             }else{
-                novoUsuario.Foto = "padrao.png";
+               NovaPublicacao.Imagem = "padrao.png";
             }
-
-            // if(novoUsuario.Nome != null && novoUsuario.Email != null && novoUsuario.Senha != null && novoUsuario.Username != null)
+             if (NovaPublicacao.Imagem != null && NovaPublicacao.Legenda != null )
+            {
+               
+               publicacaoModel.CriarPublicacao(NovaPublicacao);
+            }
+            // else
             // {
-            //     usuarioModel.CadastrarUsuario(novoUsuario);
-            //     ViewBag.Usuario = usuarioModel.MostrarUsuario();
-            // }else{
             //     usuarioModel.Mensagem = "Preencha todos os campos!";
             // }
-
-            
 
             return LocalRedirect("~/Usuario/Feed");
 
