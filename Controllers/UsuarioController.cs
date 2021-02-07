@@ -96,6 +96,7 @@ namespace InstaDev_s.Controllers
             usuarioModel.EditarUsuario(usuario);
             return LocalRedirect("~/usuario/EdicaoDePerfil");
         }
+        
         public IActionResult Excluir(int id)
         {
             usuarioModel.DeletarUsuario(id);

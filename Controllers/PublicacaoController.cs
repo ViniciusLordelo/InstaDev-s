@@ -8,11 +8,15 @@ namespace InstaDev_s.Controllers
 {
     public class PublicacaoController : Controller
      {
-    //     [Route ("Feed")]
-    //     public IActionResult Feed()
-    //     {
-    //         return View();
-    //     }
+        
+       
+
+        [Route ("Feed")]
+        //  public IActionResult Feed()
+        //  {
+         
+        //      return View();
+        //  }
         public IActionResult NovaPublicacao(IFormCollection form){
 
         Usuario novoUsuario = new Usuario();
@@ -48,9 +52,11 @@ namespace InstaDev_s.Controllers
             //     usuarioModel.Mensagem = "Preencha todos os campos!";
             // }
 
-
+            
 
             return LocalRedirect("~/Usuario/Feed");
+
+
 
         }
     }

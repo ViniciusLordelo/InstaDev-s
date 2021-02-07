@@ -255,21 +255,20 @@ main
     text-align: center;
 }
 
-/* .input
+.input
 {
      display: none;
-} */
+} 
 
-  .F-escolha
+.F-escolha
 {
-    
-    height: 27px;
-    width: 157px; 
-    border-radius: 5px; 
-    background: #D1D1D1;
-    text-align: center;
+  
+    opacity: 0;   
+    width: 0.1px;   
+    height: 0.1px;  
+    position: absolute;
 
- }  
+ }
 
 /* input#file-upload-button 
 {
