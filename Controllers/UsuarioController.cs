@@ -77,14 +77,14 @@ namespace InstaDev_s.Controllers
         public IActionResult Edicao(IFormCollection form)
         {
             Usuario usuario = new Usuario();
+            ViewBag.Infos = usuario.MostrarInformacoes(HttpContext.Session.GetString("IdUsuario"));
 
 
             usuario.Nome = form["Nome"];
             usuario.Username = form["Username"];
             usuario.Email = form["Email"];
 
-            usuarioModel.EditarUsuario(usuario);
-            ViewBag.Infos = usuario.MostrarInformacoes(HttpContext.Session.GetString("IdUsuario"));
+            usuarioModel.EditarUsuario(usuario,HttpContext.Session.GetString("IdUsuario"));
 
             return View();
         }
@@ -98,7 +98,7 @@ namespace InstaDev_s.Controllers
 
             usuario.Foto = "foto";
 
-            usuarioModel.EditarUsuario(usuario);
+            usuarioModel.EditarUsuario(usuario,HttpContext.Session.GetString("IdUsuario"));
             return LocalRedirect("~/usuario/EdicaoDePerfil");
         }
 

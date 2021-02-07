@@ -56,22 +56,28 @@ namespace InstaDev_s.Models
         {
             return $"{u.IdUsuario};{u.Foto};{u.DataNascimento};{u.Nome};{u.Email};{u.Username};{u.Senha};{u.Seguidos}";
         }
-        // public List<Usuario> MostrarUsuario(){ //Perfil
-        // }   
 
-        public void EditarUsuario(Usuario u)
+
+        public void EditarUsuario(Usuario u, string Id)
         {
-            List<string> linhas = ReadAllLinesCSV(PATH);
 
-            linhas.RemoveAll(x => x.Split(";")[5] == u.Username);
-            linhas.RemoveAll(x => x.Split(";")[4] == u.Email);
-            linhas.RemoveAll(x => x.Split(";")[3] == u.Nome);
+            List<string> csv = ReadAllLinesCSV(PATH);
+            var info =
+            csv.Find(
+                x =>
+                x.Split(";")[0] == Id);
+            
+            if (info != null)
+            {
+
+            csv.RemoveAll(x => x.Split(";")[5] == u.Username);
+            csv.RemoveAll(x => x.Split(";")[4] == u.Email);
+            csv.RemoveAll(x => x.Split(";")[3] == u.Nome);
             // linhas.RemoveAll(x => x.Split(";")[1] == u.Foto);
-            linhas.RemoveAll(x => x.Split(";")[0] == u.IdUsuario.ToString());
-
-            linhas.Add(Prepare(u));
-            RewriteCSV(PATH, linhas);
-
+            csv.RemoveAll(x => x.Split(";")[0] == u.IdUsuario.ToString());
+            csv.Add(Prepare(u));
+            RewriteCSV(PATH, csv);
+            }
         }
 
         public void DeletarUsuario(int id)
@@ -84,6 +90,7 @@ namespace InstaDev_s.Models
             RewriteCSV(PATH, linhas);
 
         }
+        
 
         public List<Usuario> ListarUsuario()
         { //Stories
@@ -138,13 +145,12 @@ namespace InstaDev_s.Models
                 user.Foto = info.Split(";")[1];
                 user.Nome = info.Split(";")[3];
                 user.Username = info.Split(";")[5];
+                user.Email = info.Split(";")[4];
+
 
                 return user;
-
             }
             return user;
-
-
 
         }
 

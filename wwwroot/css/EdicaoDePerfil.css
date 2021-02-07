@@ -66,6 +66,9 @@ header
     list-style-type: none;
     width: 220px;
 }
+.img-perfli {
+    border-radius: 50%;
+}
 /* Fim do Header */
 /* Começo do Main */
 .E-contain {
@@ -136,7 +139,7 @@ header
     justify-content: center;
 }
 .E-alterar a {
-    font-family: Segoe UI;
+    font-family: "Segoe UI";
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -144,13 +147,16 @@ header
     color: #2686CC;
     text-decoration: none;
 }
-.E-info-user h2 {
-    font-family: Segoe UI;
+.E-info-user span {
+    font-family: "Segoe UI";
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 24px;
-    margin-right: 40px;
+    margin-right: -40px;
+}
+.spannome {
+    margin-left: 17px;
 }
 .E-editarnome {
     display: flex;

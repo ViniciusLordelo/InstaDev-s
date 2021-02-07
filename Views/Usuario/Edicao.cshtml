@@ -14,10 +14,10 @@
             <div class="E-conteudo">
                 <div class="E-foto-user">
                     <div>
-                        <img src="~/imgCadastro/@ViewBag.Infos.Foto" alt="Sua imagem de perfil"></img>
+                        <img class="E-imgPerfil" style="border-radius: 50%;" src="~/imgCadastro/@ViewBag.Infos.Foto" alt="Sua imagem de perfil"></img>
                     </div>
                     <div class="E-info-user">
-                        <span>@ViewBag.Infos.Username</span>
+                        <span class="spannome">@ViewBag.Infos.Username</span>
                         <div class="E-alterar">
                             <form method="POST" action='@Url.Action("EditarFoto")' enctype="multipart/form-data">
                             <a asp-controller="Usuario" asp-action="EditarFoto">Alterar foto de perfil</a>
@@ -58,7 +58,7 @@
                 <div class="E-Fim">
                 <div class="E-Botao">
                     <Label>Email</Label>
-                    <input class="E-imputemail" value="yes_baby@email.com" type="text" name="Email"></imput>
+                    <input class="E-imputemail" value="@ViewBag.Infos.Email" type="text" name="Email"></imput>
                     <div class="E-button2">
                     <button class="E-button1" type="submit">Enviar</button> <a asp-action="Excluir" asp-controller="Usuario" asp-area="">Desativar minha conta definitivamente</a>
                     </div>

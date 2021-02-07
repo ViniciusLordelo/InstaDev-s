@@ -14422,11 +14422,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Ariel\\OneDrive\\Desktop\\InstaDev-s\\Views\\EdicaoDePerfil\\Index.cshtml",
-      "TargetPath": "Views\\EdicaoDePerfil\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\Ariel\\OneDrive\\Desktop\\InstaDev-s\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
