@@ -14,10 +14,10 @@
             <div class="E-conteudo">
                 <div class="E-foto-user">
                     <div>
-                        <img src="~/imgEdicaoDePerfil/User.svg" alt="Sua imagem de perfil"></img>
+                        <img src="~/imgCadastro/@ViewBag.Infos.Foto" alt="Sua imagem de perfil"></img>
                     </div>
                     <div class="E-info-user">
-                        <h2>yes_baby</h2>
+                        <span>@ViewBag.Infos.Username</span>
                         <div class="E-alterar">
                             <form method="POST" action='@Url.Action("EditarFoto")' enctype="multipart/form-data">
                             <a asp-controller="Usuario" asp-action="EditarFoto">Alterar foto de perfil</a>
@@ -30,7 +30,7 @@
                         <label>Nome</label>
                     </div>
                     <div class="E-Editar">
-                        <input class="E-imputnome" value="Marcos Jeeves" type="text" name="Nome"></input>
+                        <input class="E-imputnome" value="@ViewBag.Infos.Nome" type="text" name="Nome"></input>
                         <p class="E-texto1">Ajude as pessoas a descobrir sua conta usando o nome pelo qual <br>
                             você é conhecido: seu
                             nome
@@ -43,7 +43,7 @@
                         <Label>Nome de perfil</Label>
                     </div>
                     <div class="E-imputusuario1">
-                        <input class="E-imputusuario" value="Yes_baby" type="text" name="Username"></input>
+                        <input class="E-imputusuario" value="@ViewBag.Infos.Username" type="text" name="Username"></input>
                         <p class="E-texto2">Na maioria dos casos, você poderá alterar seu nome de usuário <br>
                             novamente para
                             nascimento por mais 14 dias.</p>

@@ -116,10 +116,10 @@ namespace InstaDev_s.Models
 
         }
 
-        public List<Usuario> MostrarInformacoes(string Id)
+        public Usuario MostrarInformacoes(string Id)
         {
 
-            List<Usuario> infoUser = new List<Usuario>();
+                Usuario user = new Usuario();
 
             //Procurando o user pelo Id
             List<string> csv = ReadAllLinesCSV(PATH);
@@ -127,24 +127,22 @@ namespace InstaDev_s.Models
             var info =
             csv.Find(
                 x =>
-                x.Split(";")[0] == Id
+                x.Split(";")[0] == Id 
             );
+            
 
             if (info != null)
             {
 
 
-                Usuario user = new Usuario();
-                user.Foto = csv.Find(x => x.Split(";")[1] == Foto);
-                user.Nome = csv.Find(x => x.Split(";")[3] == Nome);
-                user.Username = csv.Find(x => x.Split(";")[5] == Username);
+                user.Foto = info.Split(";")[1];
+                user.Nome = info.Split(";")[3];
+                user.Username = info.Split(";")[5];
 
-                infoUser.Add(user);
-                return infoUser;
-
+                return user;
 
             }
-            return infoUser;
+            return user;
 
 
 

@@ -14390,6 +14390,57 @@
     "CSharpLanguageVersion": 800
   },
   "RootNamespace": "InstaDev_s",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "c:\\Users\\JoViO\\OneDrive\\Área de Trabalho\\InstaDev-s\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JoViO\\OneDrive\\Área de Trabalho\\InstaDev-s\\Views\\Usuario\\Index.cshtml",
+      "TargetPath": "Views\\Usuario\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JoViO\\OneDrive\\Área de Trabalho\\InstaDev-s\\Views\\EdicaoDePerfil\\Index.cshtml",
+      "TargetPath": "Views\\EdicaoDePerfil\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JoViO\\OneDrive\\Área de Trabalho\\InstaDev-s\\Views\\Login\\Index.cshtml",
+      "TargetPath": "Views\\Login\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JoViO\\OneDrive\\Área de Trabalho\\InstaDev-s\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JoViO\\OneDrive\\Área de Trabalho\\InstaDev-s\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JoViO\\OneDrive\\Área de Trabalho\\InstaDev-s\\Views\\Usuario\\Edicao.cshtml",
+      "TargetPath": "Views\\Usuario\\Edicao.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JoViO\\OneDrive\\Área de Trabalho\\InstaDev-s\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JoViO\\OneDrive\\Área de Trabalho\\InstaDev-s\\Views\\Login\\Perfil.cshtml",
+      "TargetPath": "Views\\Login\\Perfil.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JoViO\\OneDrive\\Área de Trabalho\\InstaDev-s\\Views\\Usuario\\Feed.cshtml",
+      "TargetPath": "Views\\Usuario\\Feed.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }

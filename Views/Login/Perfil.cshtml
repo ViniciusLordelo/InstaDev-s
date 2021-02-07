@@ -1,28 +1,26 @@
-﻿@using InstaDev_s.Models;
-
+﻿
 @{
     ViewData["Title"] = "Perfil";
 }
 
 <div class="content">
-    @foreach (Usuario usuario in ViewBag.Infos)
-    {
+    
         <section class="P-info">
             <div class="P-foto-user">
-                <img src="~/imgCadastro/@usuario.Foto" alt="Foto do usuário @usuario.Nome">
+                <img src="~/imgCadastro/@ViewBag.Infos.Foto" alt="Foto do usuário @ViewBag.Infos.Nome">
             </div>
             <div class="P-info-user">
 
-                <div class="P-nome"><span>@usuario.Username</span></div>
+                <div class="P-nome"><span>@ViewBag.Infos.Username</span></div>
                 <div class="P-num"><span>3 publicações</span> <span>128 seguindo</span> <span>214 seguidores</span></div>
-                <div class="P-sair"><span>@usuario.Nome</span>
-                    <div> <button>Editar Perfil</button> </div>
+                <div class="P-sair"><span>@ViewBag.Infos.Nome</span>
+                    <div> <a asp-action="EdicaoDePerfil" asp-controller="Usuario">Editar Perfil</a> </div>
                     <div><button>Sair</button></div>
                 </div>
 
             </div>
         </section>
-    }
+    
 
 
     <div class="P-publi">

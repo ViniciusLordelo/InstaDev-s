@@ -79,11 +79,14 @@ namespace InstaDev_s.Controllers
         {
             Usuario usuario = new Usuario();
 
+
             usuario.Nome = form["Nome"];
             usuario.Username = form["Username"];
             usuario.Email = form["Email"];
 
             usuarioModel.EditarUsuario(usuario);
+            ViewBag.Infos = usuario.MostrarInformacoes(HttpContext.Session.GetString("IdUsuario"));
+
             return View();
         }
 
