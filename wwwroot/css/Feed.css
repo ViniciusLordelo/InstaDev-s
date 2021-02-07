@@ -255,18 +255,19 @@ main
     text-align: center;
 }
 
-.input
+ .input
 {
      display: none;
 } 
 
-.F-escolha
+  .F-escolha
 {
+    
   
-    opacity: 0;   
+    border-radius: 5px; 
+    text-align: center;  
     width: 0.1px;   
-    height: 0.1px;  
-    position: absolute;
+    height: 0.1px; 
 
  }
 

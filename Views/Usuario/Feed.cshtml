@@ -33,8 +33,9 @@
         </div>
         <div class="F-botoes">
             <form class="F-btns" action='@Url.Action("NovaPublicacao")' enctype="multipart/form-data">
-                <input class="F-descricao" type="text" placeholder="Digite a descrição da imagem">               
-                <label for="Escolha" class="ed-foto"> <input class="F-escolha" name="Escolha" type="file" placeholder="Escolha a imagem">Escolha a imagem </label>
+                <input class="F-descricao" type="text" placeholder="Digite a descrição da imagem">
+                <input class="F-escolha" id="Escolha" name="Escolha" type="file" placeholder="Escolha a imagem">
+                <label for="Escolha" class="ed-foto">Escolha a imagem </label>
 
 
                 <button class="F-btn">Postar</button>

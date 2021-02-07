@@ -36,7 +36,11 @@
 <body>
     @switch (ViewData["Title"])
     {
-        case "Perfil":
+        case "Login":
+        break;
+        case "Cadastro":
+        break;
+        default:
             <header>
 
                 <div class="content flex-center-bt">
@@ -47,54 +51,11 @@
                     <nav>
                         <ul class="links flex-center-bt">
                             @* <li><a asp-area="" asp-action="Index" asp-controller="Usuario">Cadastrar</a></li> *@
-                            <li><a href="Feed"><img src="~/imgPerfil/Casa.svg" alt=""></a></li>
-                            <li><a href="#"><img src="~/imgPerfil/Aviao.svg" alt=""></a></li>
-                            <li><a href="#"><img src="~/imgPerfil/Compasso.svg" alt=""></a></li>
-                            <li><a href="#"><img src="~/imgPerfil/Coracao.svg" alt=""></a></li>
-                            <li><a href="#"><img src="~/imgPerfil/User.svg" alt=""></a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            break;
-
-        case "Edição de Perfil":
-            <header>
-
-                <div class="content flex-center-bt">
-                    <a href="Usuario/Feed"><img src="~/imgPerfil/Logo.svg" alt="Logo InstaDev"></a>
-                    <form class="pesquisa" action="">
-                        <input class="input" placeholder="Pesquisar" type="text">
-                    </form>
-                    <nav>
-                        <ul class="links flex-center-bt">
-                            @* <li><a asp-area="" asp-action="Index" asp-controller="Usuario">Cadastrar</a></li> *@
                             <li><a href="Feed"><img src="~/imgPerfil/Casa.svg" alt="Casa de retorno ao feed"></a></li>
                             <li><a href="#"><img src="~/imgPerfil/Aviao.svg" alt="Caixa de mensagens"></a></li>
                             <li><a href="#"><img src="~/imgPerfil/Compasso.svg" alt="Compasso"></a></li>
                             <li><a href="#"><img src="~/imgPerfil/Coracao.svg" alt="Notificações"></a></li>
-                            <li><a href="#"><img src="~/imgPerfil/User.svg" alt="Perfil de Usuario"></a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            break;
-        case "Feed":
-            <header>
-
-                <div class="content flex-center-bt">
-                    <a href="Feed"><img src="~/imgPerfil/Logo.svg" alt=""></a>
-                    <form class="pesquisa" action="">
-                        <input class="input" placeholder="Pesquisar" type="text">
-                    </form>
-                    <nav>
-                        <ul class="links flex-center-bt">
-                            @* <li><a asp-area="" asp-action="Index" asp-controller="Usuario">Cadastrar</a></li> *@
-                            <li><a href="Feed"><img src="~/imgPerfil/Casa.svg" alt="Casa de retorno ao feed"></a></li>
-                            <li><a href="#"><img src="~/imgPerfil/Aviao.svg" alt="Caixa de mensagens"></a></li>
-                            <li><a href="#"><img src="~/imgPerfil/Compasso.svg" alt="Compasso"></a></li>
-                            <li><a href="#"><img src="~/imgPerfil/Coracao.svg" alt="Notificações"></a></li>
-                            <li><a href="#"><img src="~/imgPerfil/User.svg" alt="Perfil de Usuario"></a></li>
+                            <li><a href="Perfil"><img src="~/imgPerfil/User.svg" alt="Perfil de Usuario"></a></li>
                         </ul>
                     </nav>
                 </div>
