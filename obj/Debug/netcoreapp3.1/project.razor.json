@@ -14412,6 +14412,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\Views\\EdicaoDePerfil\\Index.cshtml",
+      "TargetPath": "Views\\EdicaoDePerfil\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Líder\\Desktop\\InstaDev-s\\Views\\Usuario\\Feed.cshtml",
       "TargetPath": "Views\\Usuario\\Feed.cshtml",
       "FileKind": "mvc"

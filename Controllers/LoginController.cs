@@ -11,7 +11,6 @@ namespace InstaDev_s.Controllers
     public class LoginController : Controller
     {
 
-
         Usuario usuarioModel = new Usuario();
         public const string PATH = "Database/Usuarios.csv";
 
@@ -25,12 +24,11 @@ namespace InstaDev_s.Controllers
                 x.Split(";")[4] == form["Email"] &&
                 x.Split(";")[6] == form["Senha"]
             );
+
             if (logado != null)
             {
 
                 HttpContext.Session.SetString("IdUsuario", logado.Split(";")[0].ToString());
-                // ViewBag.logado = HttpContext.Session.GetString("IdUsuario");
-
                 return LocalRedirect("~/Usuario/Feed");
 
             }
@@ -40,24 +38,13 @@ namespace InstaDev_s.Controllers
             return LocalRedirect("~/Login");
         }
 
-        public IActionResult Info()
-        {
-            ViewBag.logado = HttpContext.Session.GetString("IdLogado");
-            Usuario usuario = new Usuario();
-
-            ViewBag.Infos = usuario.MostrarInformacoes(ViewBag.logado);
-
-            return ViewBag.Infos;
-        }
 
         [Route("Usuario/Perfil")]
         public IActionResult Perfil()
         {
-            Usuario usuario = new Usuario();
-            ViewBag.Infos = usuario.MostrarInformacoes(ViewBag.logado);
-
+            Usuario usuario = new Usuario();            
+            ViewBag.Infos = usuario.MostrarInformacoes(HttpContext.Session.GetString("IdUsuario"));
             return View();
-
         }
 
 
@@ -67,9 +54,4 @@ namespace InstaDev_s.Controllers
         }
 
     }
-
-
-
-
-
 }

@@ -20,19 +20,19 @@ namespace InstaDev_s.Controllers
         }
 
 
-
         [Route("CadastrarUsuario")]
         public IActionResult CadastrarUsuario(IFormCollection form)
         {
-            Usuario novoUsuario = new Usuario();
 
-            novoUsuario.IdUsuario = Guid.NewGuid();
-            novoUsuario.Email = form["Email"];
-            novoUsuario.Nome = form["Nome"];
-            novoUsuario.Username = form["Username"];
-            novoUsuario.Senha = form["Senha"];
+            Usuario novoUsuario = new Usuario();
+         
+            novoUsuario.IdUsuario      = Guid.NewGuid();
+            novoUsuario.Email          = form["Email"];
+            novoUsuario.Nome           = form["Nome"];
+            novoUsuario.Username       = form["Username"];
+            novoUsuario.Senha          = form["Senha"];
             novoUsuario.DataNascimento = DateTime.Parse(form["DataNascimento"]);
-            novoUsuario.Foto = form["Foto"];
+            novoUsuario.Foto           = form["Foto"];
 
             if (form.Files.Count > 0)
             {
@@ -62,7 +62,7 @@ namespace InstaDev_s.Controllers
             if (novoUsuario.Nome != null && novoUsuario.Email != null && novoUsuario.Senha != null && novoUsuario.Username != null)
             {
                 usuarioModel.CadastrarUsuario(novoUsuario);
-                // ViewBag.Usuario = usuarioModel.MostrarUsuario();
+               // ViewBag.Usuario = usuarioModel.MostrarUsuario();
             }
             else
             {
@@ -78,13 +78,18 @@ namespace InstaDev_s.Controllers
         {
             Usuario usuario = new Usuario();
 
+
             usuario.Nome = form["Nome"];
             usuario.Username = form["Username"];
             usuario.Email = form["Email"];
 
             usuarioModel.EditarUsuario(usuario);
+            ViewBag.Infos = usuario.MostrarInformacoes(HttpContext.Session.GetString("IdUsuario"));
+
             return View();
         }
+
+
         [Route("EditarFoto")]
         public IActionResult EditarFoto(string foto)
         // string foto -> iStock-648229868-1024x909.png
@@ -96,13 +101,17 @@ namespace InstaDev_s.Controllers
             usuarioModel.EditarUsuario(usuario);
             return LocalRedirect("~/usuario/EdicaoDePerfil");
         }
-        
+
+
+        [Route("Excluir")]
         public IActionResult Excluir(int id)
         {
             usuarioModel.DeletarUsuario(id);
             return LocalRedirect("~/Login/Index");
         }
-        [Route("Feed")]
+
+
+        [Route ("Feed")]
         public IActionResult Feed()
         {
 
@@ -110,8 +119,9 @@ namespace InstaDev_s.Controllers
             return View();
         }
 
-        public IActionResult NovaPublicacao(IFormCollection form)
-        {
+
+        [Route("NovaPublição")]
+        public IActionResult NovaPublicacao(IFormCollection form){
 
             Usuario novoUsuario = new Usuario();
             novoUsuario.Foto = form["Foto"];
