@@ -255,17 +255,31 @@ main
     text-align: center;
 }
 
-.F-escolha
+/* .input
 {
+     display: none;
+} */
+
+  .F-escolha
+{
+    
     height: 27px;
-    width: 157px;
-    border-radius: 5px;
+    width: 157px; 
+    border-radius: 5px; 
     background: #D1D1D1;
-    text-align: center  ;
-}
+    text-align: center;
+
+ }  
+
+/* input#file-upload-button 
+{
+ display: none;
+ width: 100%;
+} */
 
 .F-btn
 {
+
     font-family: 'Segoe UI' ;
     height: 27px;
     width: 140px;

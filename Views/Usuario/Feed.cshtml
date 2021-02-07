@@ -8,7 +8,8 @@
                 <section class="F-storyes ">
                         <nav>
                             <ul class="F-img-pr">
-                                @foreach (var usuarios in ViewBag.Stories){
+                                @foreach (var usuarios in ViewBag.Stories)
+                                {
                                     <li>
                                         <img src="~/imgCadastro/@usuarios.Foto" alt="Imagem perfil " width="40">
                                         <p>@usuarios.Nome</p>
@@ -25,13 +26,16 @@
                                 <span>Marcos Jeeves</span>
                             </div>
                         </div> 
-            </div>
+                </div>
                 <div class="F-postar">
-                    <div class="F-post"><img src="~/imgFeed/thank-you 3.png" alt="foto de perfil de Marcos Jeeves "><p>Postar</p></div> 
-                        <div class="F-botoes">
-                            <form class="F-btns" action= '@Url.Action("NovaPublicacao")' enctype="multipart/form-data">
-                                <input class="F-descricao" type="text" placeholder="Digite a descrição da imagem">  <!--placeholder= escrever texto-->
-                                <input class="F-escolha" type="file" placeholder="Escolha a imagem">
+                <div class="F-post"><img src="~/imgFeed/thank-you 3.png" alt="foto de perfil de Marcos Jeeves "><p>Postar</p></div> 
+                <div class="F-botoes">
+                <form class="F-btns" action= '@Url.Action("NovaPublicacao")' enctype="multipart/form-data">
+                <input class="F-descricao" type="text" placeholder="Digite a descrição da imagem">  <!--placeholder= escrever texto-->
+                 @* <input class="F-escolha" type="file" placeholder="Escolha a imagem"> *@
+                <input type="file" id="file" accept="image/" class="ed-foto" placeholder="Alterar foto de perfil" />
+                <label for="file" class="ed-foto">Alterar foto de perfil &nbsp</label>
+                                
                                     <button class="F-btn">Postar</button>
                             </form>
                     </div><!---final botoes-->
