@@ -37,6 +37,12 @@ namespace InstaDev_s.Controllers
 
             return LocalRedirect("~/Login");
         }
+        [Route("Logout")]
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("IdUsuario");
+            return LocalRedirect("~/Login");
+        }
 
 
         [Route("Usuario/Perfil")]

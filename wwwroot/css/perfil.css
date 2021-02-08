@@ -63,7 +63,7 @@ header
 
 .input::placeholder
 {
-    background-image: url("../img/Lupa.svg");
+    background-image: url("../imgEdicaoDePerfil/Lupa.svg");
     background-repeat: no-repeat;
     background-position-x: 64px;
     background-position-y: 4px;
