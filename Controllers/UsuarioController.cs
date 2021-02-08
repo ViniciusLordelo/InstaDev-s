@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace InstaDev_s.Controllers
 {
+    
     [Route("Usuario")]
     public class UsuarioController : Controller
     {
@@ -120,10 +121,11 @@ namespace InstaDev_s.Controllers
         }
 
 
+        Publicacao publicacaoModel = new Publicacao();
         [Route("NovaPublição")]
         public IActionResult NovaPublicacao(IFormCollection form){
-
             Usuario novoUsuario = new Usuario();
+            Publicacao NovaPublicacao =  new Publicacao();
             novoUsuario.Foto = form["Foto"];
             if (form.Files.Count > 0)
             {
@@ -148,6 +150,11 @@ namespace InstaDev_s.Controllers
             else
             {
                 novoUsuario.Foto = "padrao.png";
+            }
+             if (NovaPublicacao.Imagem != null && NovaPublicacao.Legenda != null )
+            {
+               
+               publicacaoModel.CriarPublicacao(NovaPublicacao);
             }
 
             // if(novoUsuario.Nome != null && novoUsuario.Email != null && novoUsuario.Senha != null && novoUsuario.Username != null)

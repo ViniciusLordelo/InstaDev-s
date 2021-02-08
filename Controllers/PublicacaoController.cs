@@ -13,7 +13,7 @@ namespace InstaDev_s.Controllers
         public IActionResult NovaPublicacao(IFormCollection form){
 
         Publicacao NovaPublicacao = new Publicacao();
-        NovaPublicacao.Imagem = form["Escolha"];
+        NovaPublicacao.Imagem = form["Foto"];
         if (form.Files.Count > 0)
             {
 

@@ -137,31 +137,18 @@ namespace InstaDev_s.Models
                 x.Split(";")[0] == Id 
             );
             
-
             if (info != null)
             {
-
-
                 user.Foto = info.Split(";")[1];
                 user.Nome = info.Split(";")[3];
                 user.Username = info.Split(";")[5];
                 user.Email = info.Split(";")[4];
-
 
                 return user;
             }
             return user;
 
         }
-
-
-
-
-
-
-
-
-
 
         //public void Seguir(){
 
