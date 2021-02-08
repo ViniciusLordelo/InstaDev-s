@@ -71,7 +71,6 @@ header
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000000;
 }
 
 .links
@@ -255,11 +254,6 @@ main
     color: #ABABAB;
     text-align: center;
 }
-
- .input
-{
-    display: none;
-} 
 
 .F-escolha
 {

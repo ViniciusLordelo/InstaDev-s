@@ -126,7 +126,9 @@ namespace InstaDev_s.Controllers
         public IActionResult NovaPublicacao(IFormCollection form){
             Usuario novoUsuario = new Usuario();
             Publicacao NovaPublicacao =  new Publicacao();
-            novoUsuario.Foto = form["Foto"];
+            NovaPublicacao.IdPublicacao = Guid.NewGuid(); 
+            NovaPublicacao.Legenda = form["Legenda"];
+            NovaPublicacao.Imagem = form["Foto"];
             if (form.Files.Count > 0)
             {
 
@@ -145,25 +147,17 @@ namespace InstaDev_s.Controllers
                     file.CopyTo(stream);
                 }
 
-                novoUsuario.Foto = file.FileName;
+                NovaPublicacao.Imagem = file.FileName;
             }
             else
             {
-                novoUsuario.Foto = "padrao.png";
+                NovaPublicacao.Imagem = "padrao.png";
             }
              if (NovaPublicacao.Imagem != null && NovaPublicacao.Legenda != null )
             {
                
                publicacaoModel.CriarPublicacao(NovaPublicacao);
             }
-
-            // if(novoUsuario.Nome != null && novoUsuario.Email != null && novoUsuario.Senha != null && novoUsuario.Username != null)
-            // {
-            //     usuarioModel.CadastrarUsuario(novoUsuario);
-            //     ViewBag.Usuario = usuarioModel.MostrarUsuario();
-            // }else{
-            //     usuarioModel.Mensagem = "Preencha todos os campos!";
-            // }
 
 
 

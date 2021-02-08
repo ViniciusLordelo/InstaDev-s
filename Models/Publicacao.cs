@@ -11,7 +11,7 @@ namespace InstaDev_s.Models
         public string Legenda { get; set; }
         public int Likes { get; set; }
 
-        private const string PATH = "Database/Publicacoes.csv";
+        public const string PATH = "Database/Publicacoes.csv";
 
         public Publicacao(){
             CreateFolderAndFile(PATH);
