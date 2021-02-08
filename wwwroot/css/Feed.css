@@ -61,10 +61,10 @@ header
 
 .input::placeholder
 {
-    background-image: url("../imgCadastro/Lupa.svg");
+    background-image: url("../imgEdicaoDePerfil/Lupa.svg");
     background-repeat: no-repeat;
     background-position-x: 64px;
-    background-position-y: 3px;
+    background-position-y: 4px;
     background-size: 10px;
     color: rgba(175, 175, 175, 1); 
     display: flex;

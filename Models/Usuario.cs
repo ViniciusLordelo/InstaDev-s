@@ -13,17 +13,6 @@ namespace InstaDev_s.Models
 
         public System.Guid IdUsuario { get; set; }
 
-        public Usuario(string nome, string foto, int seguidos, string email, string username, string senha, string mensagem)
-        {
-            this.Nome = nome;
-            this.Foto = foto;
-            this.Seguidos = seguidos;
-            this.Email = email;
-            this.Username = username;
-            this.Senha = senha;
-            this.Mensagem = mensagem;
-
-        }
         public string Nome { get; set; }
 
         public string Foto { get; set; }
@@ -56,7 +45,6 @@ namespace InstaDev_s.Models
         {
             return $"{u.IdUsuario};{u.Foto};{u.DataNascimento};{u.Nome};{u.Email};{u.Username};{u.Senha};{u.Seguidos}";
         }
-
 
         public void EditarUsuario(Usuario u, string Id)
         {
